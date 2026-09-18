@@ -1,0 +1,524 @@
+:root{
+  --navy:#0a2342;
+  --navy-2:#12385f;
+  --red:#d83b3f;
+  --blue:#78add8;
+  --cream:#f4f0e8;
+  --paper:#fbfaf6;
+  --ink:#0a2342;
+  --muted:#5d6d7e;
+  --line:rgba(10,35,66,.16);
+  --max:1320px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",Arial,sans-serif;color:var(--ink);background:var(--cream);font-size:16px;line-height:1.55}img,video{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{font:inherit}.shell{width:min(calc(100% - 64px),var(--max));margin:auto}.eyebrow{font:700 11px/1.2 "Manrope",sans-serif;letter-spacing:.19em;text-transform:uppercase}.eyebrow.red{color:var(--red)}.eyebrow.blue{color:var(--blue)}
+.site-header{height:86px;position:absolute;top:0;left:0;right:0;z-index:20;color:#fff;border-bottom:1px solid rgba(255,255,255,.18)}.header-inner{height:100%;display:grid;grid-template-columns:250px 1fr auto;align-items:center;gap:34px}.brand img{width:205px;height:auto}.desktop-nav{justify-self:center;display:flex;gap:36px;font:700 12px "Manrope";letter-spacing:.11em;text-transform:uppercase}.desktop-nav a{opacity:.78;transition:opacity .25s ease;position:relative;padding:10px 0}.desktop-nav a:after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;background:var(--red);transform:scaleX(0);transform-origin:right center;transition:transform .32s cubic-bezier(.2,.8,.2,1)}.desktop-nav a:hover,.desktop-nav a.active{opacity:1}.desktop-nav a:hover:after,.desktop-nav a.active:after{transform:scaleX(1);transform-origin:left center}.header-cta{border:1px solid rgba(255,255,255,.52);padding:12px 18px;font:700 11px "Manrope";letter-spacing:.08em;text-transform:uppercase;transition:.2s}.header-cta:hover{background:#fff;color:var(--navy)}.menu-button{display:none;background:none;border:0;color:#fff;padding:10px}.menu-button span{display:block;width:24px;height:1px;background:currentColor;margin:6px}.mobile-menu{display:none}
+.hero{min-height:780px;height:88vh;max-height:940px;position:relative;overflow:hidden;background:var(--navy);color:#fff}.hero-media{position:absolute;inset:0}.hero-media video{width:100%;height:100%;object-fit:cover;filter:saturate(.72) contrast(1.05) brightness(.62);animation:heroMediaDrift 18s ease-in-out infinite alternate;transform-origin:center center;will-change:transform}.hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,24,45,.94) 0%,rgba(6,24,45,.72) 43%,rgba(6,24,45,.18) 78%,rgba(6,24,45,.08) 100%)}.hero-ribbon{position:absolute;right:-7vw;top:15%;width:min(55vw,760px);opacity:.33;animation:ribbonFloat 11s ease-in-out infinite alternate;transform-origin:right center}.hero-shield{position:absolute;right:7%;bottom:12%;width:105px;opacity:.16;animation:shieldFloat 8s ease-in-out infinite alternate}.hero-inner{position:relative;z-index:2;height:100%;min-height:780px;display:flex;align-items:flex-end;padding:160px 0 96px}.hero-copy{max-width:820px}.hero-meta{display:flex;gap:22px;align-items:center;margin-bottom:25px;color:#c9d8e5}.hero-meta span+span:before{content:"";display:inline-block;width:38px;height:1px;background:var(--red);margin-right:22px;vertical-align:middle}.hero h1{font:600 clamp(68px,8.4vw,132px)/.87 "Manrope",sans-serif;letter-spacing:-.067em;margin:0 0 30px;max-width:980px}.hero h1 em{font-style:normal;color:var(--blue)}.hero p{font-size:20px;max-width:650px;color:#e0e8ef;margin:0 0 34px}.actions{display:flex;align-items:center;gap:28px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;background:var(--red);color:#fff;font:800 11px "Manrope";letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--red);transition:.25s}.button:hover{background:#fff;border-color:#fff;color:var(--navy)}.text-link{font:800 11px "Manrope";letter-spacing:.09em;text-transform:uppercase;padding-bottom:5px;position:relative}.text-link:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(.35);transform-origin:left;transition:transform .3s ease}.text-link:hover:after{transform:scaleX(1)}.hero-scroll{position:absolute;right:32px;bottom:31px;z-index:3;font:700 10px "Manrope";letter-spacing:.18em;text-transform:uppercase;writing-mode:vertical-rl;color:rgba(255,255,255,.8)}
+.marquee{height:50px;background:var(--red);color:#fff;overflow:hidden;display:flex;align-items:center}.marquee-track{white-space:nowrap;display:flex;gap:34px;min-width:max-content;animation:marquee 25s linear infinite;font:800 11px "Manrope";letter-spacing:.14em;text-transform:uppercase}.marquee-track span:after{content:"★";margin-left:34px;color:#fff}.marquee-track span{display:inline-block}
+.studio{background:var(--cream);padding:128px 0 120px;position:relative;overflow:hidden}.studio-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:9vw;align-items:start}.studio-label{padding-top:10px}.studio-copy h2{font:600 clamp(52px,6vw,94px)/.96 "Manrope";letter-spacing:-.058em;margin:0 0 35px;max-width:950px}.studio-copy h2 span{color:var(--blue)}.studio-copy p{max-width:760px;font-size:21px;color:#43566a}.studio-copy .quiet{font:600 18px "Manrope";margin-top:35px;color:var(--navy)}.studio-mark{position:absolute;right:-80px;bottom:-110px;width:320px;opacity:.055}
+.capabilities{background:var(--navy);color:#fff;padding:126px 0 118px}.cap-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw;align-items:end;margin-bottom:62px}.cap-head h2{font:600 clamp(55px,6.2vw,92px)/.95 "Manrope";letter-spacing:-.06em;margin:0}.cap-head p{color:#bdccda;max-width:540px;font-size:18px;margin:0 0 7px}.cap-list{border-top:1px solid rgba(255,255,255,.16)}.cap-row{display:grid;grid-template-columns:70px minmax(280px,.9fr) 1.25fr 46px;gap:28px;align-items:center;min-height:136px;border-bottom:1px solid rgba(255,255,255,.16);transition:.2s}.cap-row:hover{background:rgba(120,173,216,.08)}.cap-num{font:700 11px "Manrope";letter-spacing:.16em;color:var(--blue)}.cap-row h3{font:600 clamp(28px,3vw,46px)/1 "Manrope";letter-spacing:-.045em;margin:0}.cap-row p{color:#bdccda;margin:0;max-width:620px}.cap-arrow{font-size:25px;color:var(--red);transition:.2s}.cap-row:hover .cap-arrow{transform:translate(4px,-4px)}.cap-footer{display:flex;justify-content:flex-end;padding-top:34px}
+.visual-story{display:grid;grid-template-columns:1.08fr .92fr;min-height:690px;background:var(--paper)}.visual-media{position:relative;overflow:hidden;min-height:690px}.visual-media video{width:100%;height:100%;object-fit:cover;filter:saturate(.72) contrast(1.03) brightness(.92);animation:visualMediaDrift 16s ease-in-out infinite alternate;transform-origin:center center;will-change:transform}.visual-media:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,35,66,.35),transparent 45%)}.visual-badge{position:absolute;right:34px;bottom:34px;width:112px;z-index:2;filter:drop-shadow(0 8px 25px rgba(0,0,0,.2))}.visual-copy{padding:100px clamp(48px,7vw,110px);display:flex;flex-direction:column;justify-content:center;background:var(--paper)}.visual-copy h2{font:600 clamp(50px,5.2vw,80px)/.96 "Manrope";letter-spacing:-.055em;margin:18px 0 30px}.visual-copy p{font-size:19px;color:#536476;max-width:560px}.proof-list{margin-top:42px;border-top:1px solid var(--line)}.proof-row{display:grid;grid-template-columns:54px 1fr;padding:22px 0;border-bottom:1px solid var(--line)}.proof-row b{color:var(--red);font:700 11px "Manrope";letter-spacing:.14em}.proof-row strong{font:600 18px "Manrope"}
+.process{background:var(--cream);padding:126px 0}.process-head{display:grid;grid-template-columns:.75fr 1.25fr;gap:8vw;margin-bottom:72px}.process-head h2{font:600 clamp(55px,6.2vw,92px)/.95 "Manrope";letter-spacing:-.06em;margin:0}.process-steps{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.step{padding:42px 40px 48px 0;border-right:1px solid var(--line);min-height:280px}.step+.step{padding-left:40px}.step:last-child{border-right:0}.roman{font:600 42px "Manrope";color:var(--blue);margin-bottom:56px}.step h3{font:600 25px/1.05 "Manrope";letter-spacing:-.03em;margin:0 0 16px}.step p{color:#5e6d7d;margin:0}.process-note{display:flex;justify-content:space-between;gap:30px;align-items:center;margin-top:44px}.process-note p{margin:0;color:#5e6d7d}
+.trust{background:var(--paper);padding:118px 0}.trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:9vw;align-items:center}.trust h2{font:600 clamp(52px,5.5vw,86px)/.96 "Manrope";letter-spacing:-.058em;margin:18px 0 28px}.trust h2 span{color:var(--blue)}.trust p{color:#5b6a7a;font-size:19px}.trust-cards{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--line)}.trust-card{display:grid;grid-template-columns:56px 1fr;padding:27px 0;border-bottom:1px solid var(--line)}.trust-card .n{font:700 11px "Manrope";letter-spacing:.14em;color:var(--red)}.trust-card h3{font:600 22px "Manrope";margin:0 0 7px}.trust-card p{font-size:15px;margin:0}
+.cta{background:var(--navy);color:#fff;position:relative;overflow:hidden}.cta-inner{min-height:510px;display:flex;align-items:center;justify-content:space-between;gap:70px;position:relative;z-index:2}.cta h2{font:600 clamp(58px,7vw,108px)/.9 "Manrope";letter-spacing:-.063em;margin:0;max-width:850px}.cta h2 span{color:var(--blue)}.cta-side{max-width:320px}.cta-side p{color:#bdccda;margin:0 0 25px}.cta-ribbon{position:absolute;right:-10%;top:8%;width:58%;opacity:.12;animation:ribbonFloat 12s ease-in-out infinite alternate}.cta:after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:linear-gradient(90deg,var(--red) 0 34%,#fff 34% 67%,var(--blue) 67%)}
+.site-footer{background:#06182d;color:#fff;padding:52px 0 36px}.footer-top{display:flex;align-items:center;justify-content:space-between;gap:30px}.footer-top img{width:190px}.footer-nav{display:flex;gap:30px;font:700 11px "Manrope";letter-spacing:.1em;text-transform:uppercase}.footer-bottom{margin-top:45px;padding-top:22px;border-top:1px solid rgba(255,255,255,.13);display:flex;justify-content:space-between;color:#90a3b6;font-size:13px}
+/* inner pages */
+.page-header{position:relative;background:var(--navy)}.page-header .site-header{position:relative}.page-hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;border-bottom:5px solid var(--red)}.page-hero-inner{min-height:470px;padding:86px 0 78px;display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:end;position:relative;z-index:2}.page-hero h1{font:600 clamp(62px,7vw,106px)/.9 "Manrope";letter-spacing:-.062em;margin:15px 0 0;max-width:950px}.page-hero h1 span{color:var(--blue)}.page-hero p{color:#bdccda;font-size:18px;max-width:480px;margin:0 0 8px}.page-art-ribbon{position:absolute;right:-7%;top:20px;width:min(48vw,690px);opacity:.22;animation:ribbonFloat 12s ease-in-out infinite alternate}.page-art-shield{position:absolute;right:6%;bottom:-28px;width:140px;opacity:.13;animation:shieldFloat 9s ease-in-out infinite alternate}.content-section{padding:108px 0;background:var(--cream)}.split-copy{display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw}.split-copy h2{font:600 clamp(48px,5.4vw,82px)/.96 "Manrope";letter-spacing:-.055em;margin:0}.split-copy p{font-size:19px;color:#596979;max-width:720px}.about-story{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.about-photo{min-height:560px;position:relative;overflow:hidden}.about-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.about-panel h2{font:600 clamp(48px,5vw,76px)/.96 "Manrope";letter-spacing:-.055em;margin:16px 0 30px}.about-panel p{color:#58697a;font-size:18px}.local-strip{background:var(--blue);color:var(--navy);padding:62px 0}.local-strip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(10,35,66,.18)}.local-item{background:var(--blue);padding:30px}.local-item span{font:700 10px "Manrope";letter-spacing:.16em;color:#fff}.local-item strong{display:block;font:600 23px "Manrope";margin-top:9px}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.service-card{padding:36px;min-height:270px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper);position:relative}.service-card:before{content:"";position:absolute;left:0;top:0;width:4px;height:0;background:var(--red);transition:.25s}.service-card:nth-child(3n+2):before{background:var(--blue)}.service-card:nth-child(3n):before{background:var(--navy)}.service-card:hover:before{height:100%}.service-card .num{font:700 10px "Manrope";letter-spacing:.15em;color:var(--red)}.service-card h3{font:600 26px/1.05 "Manrope";letter-spacing:-.035em;margin:56px 0 15px}.service-card p{color:#5d6c7c;margin:0}.quick-contact{background:var(--navy);color:#fff;padding:78px 0}.quick-contact-inner{display:flex;justify-content:space-between;align-items:center;gap:40px}.quick-contact h2{font:600 clamp(40px,4vw,62px)/1 "Manrope";letter-spacing:-.05em;margin:8px 0 0}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:0;background:var(--paper);border:1px solid var(--line)}.contact-panel{background:var(--navy);color:#fff;padding:55px}.contact-panel .row{padding:24px 0;border-bottom:1px solid rgba(255,255,255,.15)}.contact-panel .row:last-child{border-bottom:0}.label{display:block;color:var(--blue);font:700 10px "Manrope";letter-spacing:.15em;text-transform:uppercase;margin-bottom:7px}.contact-panel a,.contact-panel address{font:600 clamp(20px,2.3vw,30px) "Manrope";font-style:normal}.contact-copy{padding:65px}.contact-copy h2{font:600 clamp(44px,4.8vw,72px)/.96 "Manrope";letter-spacing:-.05em;margin:0 0 25px}.contact-copy p{color:#5c6c7c;font-size:18px}.contact-note{margin-top:45px;padding-top:22px;border-top:1px solid var(--line)}.contact-note span{font:700 10px "Manrope";letter-spacing:.14em;color:var(--red);text-transform:uppercase}.contact-note p{font-size:14px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.is-visible{opacity:1;transform:none}
+@keyframes ribbonFloat{from{transform:translate3d(0,0,0) rotate(-1deg)}to{transform:translate3d(-18px,12px,0) rotate(1.5deg)}}@keyframes shieldFloat{from{transform:translateY(0) rotate(-2deg)}to{transform:translateY(-14px) rotate(2deg)}}@keyframes marquee{to{transform:translateX(-50%)}}
+@media(max-width:980px){.desktop-nav,.header-cta{display:none}.menu-button{display:block;justify-self:end}.header-inner{grid-template-columns:1fr auto}.mobile-menu.open{display:block;position:absolute;top:86px;left:0;right:0;z-index:30;background:var(--navy);color:#fff;padding:22px 0;border-top:1px solid rgba(255,255,255,.15)}.mobile-menu-inner{display:grid;gap:15px}.hero{height:auto;min-height:720px}.hero-inner{min-height:720px}.studio-grid,.cap-head,.process-head,.trust-grid,.split-copy,.about-story{grid-template-columns:1fr;gap:40px}.visual-story{grid-template-columns:1fr}.visual-media{min-height:520px}.process-steps{grid-template-columns:1fr}.step,.step+.step{padding:34px 0;border-right:0;border-bottom:1px solid var(--line);min-height:auto}.step:last-child{border-bottom:0}.roman{margin-bottom:24px}.page-hero-inner{grid-template-columns:1fr;gap:30px;min-height:390px}.service-grid{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}.local-strip-grid{grid-template-columns:1fr}.cta-inner{min-height:460px;align-items:flex-start;flex-direction:column;justify-content:center}.cap-row{grid-template-columns:50px 1fr 42px}.cap-row p{grid-column:2/3}.cap-row .cap-arrow{grid-column:3;grid-row:1/3}}
+@media(max-width:640px){.shell{width:min(calc(100% - 36px),var(--max))}.site-header{height:72px}.brand img{width:160px}.hero{min-height:690px}.hero-inner{min-height:690px;padding:125px 0 68px}.hero h1{font-size:58px}.hero p{font-size:17px}.hero-scroll{display:none}.studio,.capabilities,.process,.trust,.content-section{padding:82px 0}.studio-copy h2,.cap-head h2,.process-head h2,.trust h2,.split-copy h2,.about-panel h2{font-size:48px}.cap-row{min-height:154px;gap:15px}.cap-row h3{font-size:27px}.visual-media{min-height:400px}.visual-copy{padding:70px 24px}.visual-copy h2{font-size:48px}.process-note,.quick-contact-inner,.footer-top,.footer-bottom{align-items:flex-start;flex-direction:column}.service-grid{grid-template-columns:1fr}.service-card{min-height:230px}.page-hero-inner{padding:62px 0 56px;min-height:340px}.page-hero h1{font-size:54px}.page-art-ribbon{width:80vw;right:-28%}.contact-panel,.contact-copy{padding:34px 26px}.footer-nav{flex-wrap:wrap}.cta h2{font-size:58px}.actions{gap:18px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1;transform:none;transition:none}.hero-ribbon,.hero-shield,.page-art-ribbon,.page-art-shield,.cta-ribbon,.marquee-track,.hero-media video,.visual-media video,.service-intro-image img,.contact-visual-image img{animation:none!important}}
+
+/* v11.1 media + motion refinement */
+.studio-label{display:flex;flex-direction:column;gap:30px}.studio-photo{margin:20px 0 0;width:min(100%,360px)}.studio-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.78) contrast(1.03)}.studio-photo figcaption{margin-top:13px;padding-top:12px;border-top:1px solid var(--line);font:700 10px/1.4 "Manrope";letter-spacing:.11em;text-transform:uppercase;color:#667789}.studio-photo:hover img{filter:saturate(.9) contrast(1.04)}
+.service-intro-media{display:grid;grid-template-columns:1.08fr .92fr;min-height:560px;background:var(--paper)}.service-intro-image{overflow:hidden;min-height:560px;position:relative}.service-intro-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,35,66,.24),transparent 52%)}.service-intro-image img{width:100%;height:100%;object-fit:cover;filter:saturate(.8) contrast(1.03);animation:stillMediaDrift 20s ease-in-out infinite alternate;transform-origin:center;will-change:transform}.service-intro-copy{padding:90px clamp(44px,6vw,100px);display:flex;flex-direction:column;justify-content:center}.service-intro-copy h2{font:600 clamp(48px,5.3vw,80px)/.95 "Manrope";letter-spacing:-.055em;margin:18px 0 28px}.service-intro-copy h2 span{color:var(--blue)}.service-intro-copy>p:last-child{font-size:18px;color:#5b6b7b;max-width:540px}.services-grid-section{padding-top:92px}.contact-visual{display:grid;grid-template-columns:1.35fr .65fr;min-height:330px;background:var(--navy);color:#fff}.contact-visual-image{overflow:hidden;position:relative;min-height:330px}.contact-visual-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,35,66,.12),rgba(10,35,66,.5))}.contact-visual-image img{width:100%;height:100%;object-fit:cover;filter:saturate(.75) brightness(.82);animation:stillMediaDrift 22s ease-in-out infinite alternate;transform-origin:center}.contact-visual-caption{display:flex;flex-direction:column;justify-content:center;padding:55px}.contact-visual-caption>p:last-child{font:600 clamp(25px,2.5vw,38px)/1.08 "Manrope";letter-spacing:-.035em;margin:18px 0 0;max-width:340px}.page-art-ribbon{animation:ribbonFloat 10s ease-in-out infinite alternate}.page-art-shield{animation:shieldFloat 7s ease-in-out infinite alternate}.button{position:relative;overflow:hidden}.button:after{content:"↗";margin-left:0;width:0;opacity:0;transform:translate(-5px,5px);transition:width .25s ease,opacity .25s ease,transform .25s ease}.button:hover:after{width:16px;opacity:1;transform:none}
+@keyframes heroMediaDrift{0%{transform:scale(1.015) translate3d(0,0,0)}100%{transform:scale(1.065) translate3d(-1.1%,.7%,0)}}@keyframes visualMediaDrift{0%{transform:scale(1.01) translate3d(0,0,0)}100%{transform:scale(1.045) translate3d(.8%,-.6%,0)}}@keyframes stillMediaDrift{0%{transform:scale(1.01) translate3d(0,0,0)}100%{transform:scale(1.055) translate3d(-.7%,.5%,0)}}
+@media(max-width:980px){.service-intro-media,.contact-visual{grid-template-columns:1fr}.service-intro-image{min-height:440px}.contact-visual-image{min-height:300px}.studio-photo{width:min(100%,520px)}}
+@media(max-width:640px){.service-intro-image{min-height:330px}.service-intro-copy{padding:64px 24px}.contact-visual-image{min-height:260px}.contact-visual-caption{padding:44px 24px}.studio-photo{margin-top:8px}}
+
+/* ===== v11.2 design audit: fewer chapters, purposeful color + numbering ===== */
+:root{
+  --blue:#78add8; /* accent, not a primary field */
+}
+
+/* Page hero labels are categories, not faux chapter numbers. */
+.page-hero .eyebrow{color:#a9cce6}
+
+/* Local proof facts are labels, not a fake sequence. */
+.proof-row{grid-template-columns:84px 1fr}
+.proof-row b{color:var(--red);font-size:9px;letter-spacing:.17em}
+
+/* ABOUT: dark local strip gives the page one strong color chapter without a wall of pale blue. */
+.local-strip{background:var(--navy);color:#fff;padding:64px 0}
+.local-strip-grid{gap:1px;background:rgba(255,255,255,.14)}
+.local-item{background:var(--navy-2);position:relative;overflow:hidden;padding:32px}
+.local-item:before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:var(--red)}
+.local-item:nth-child(2):before{background:var(--blue)}
+.local-item:nth-child(3):before{background:#fff}
+.local-item span{color:var(--blue)}
+.local-item strong{color:#fff}
+
+/* SERVICES: restore the denser dark 3x3 card language from the earlier direction. */
+.services-grid-section{background:var(--navy);color:#fff;padding:96px 0 110px}
+.service-grid{border-color:rgba(255,255,255,.15);background:var(--navy)}
+.service-card{
+  background:var(--navy);
+  color:#fff;
+  min-height:235px;
+  padding:30px;
+  border-color:rgba(255,255,255,.15);
+  overflow:hidden;
+  transition:background .28s ease,transform .28s ease;
+}
+.service-card:after{
+  content:"";
+  position:absolute;
+  width:92px;height:92px;border-radius:50%;
+  border:16px solid rgba(120,173,216,.07);
+  right:-30px;bottom:-30px;
+  transition:transform .4s ease,border-color .3s ease;
+}
+.service-card:before{width:3px;height:100%;opacity:.9;transform:scaleY(.28);transform-origin:top;transition:transform .3s ease}
+.service-card:nth-child(3n+2):before{background:var(--blue)}
+.service-card:nth-child(3n):before{background:#fff}
+.service-card:hover{background:#102e51}
+.service-card:hover:before{height:100%;transform:scaleY(1)}
+.service-card:hover:after{transform:translate(-8px,-8px);border-color:rgba(120,173,216,.13)}
+.service-card .num{color:var(--blue)}
+.service-card h3{color:#fff;margin:42px 0 13px;font-size:24px}
+.service-card p{color:#b9c7d4;font-size:15px;line-height:1.55}
+
+/* Avoid following the dark service catalog with another dark block. */
+.page-services .quick-contact{background:var(--cream);color:var(--navy);border-top:1px solid var(--line)}
+.page-services .quick-contact .eyebrow{color:var(--red)}
+.page-services .quick-contact .button{background:var(--red);color:#fff;border-color:var(--red)}
+.page-services .quick-contact .button:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+
+/* Keep light blue as punctuation across pale sections, not a backdrop. */
+.studio-copy h2 span,.page-hero h1 span,.service-intro-copy h2 span,.cta h2 span{color:var(--blue)}
+.content-section,.studio,.process{background:var(--cream)}
+.service-intro-media,.visual-story,.visual-copy,.contact-grid{background:var(--paper)}
+
+/* Clean card animation: visual response without layout movement. */
+.service-card{transform:none!important}
+
+@media(max-width:980px){
+  .service-card{min-height:220px}
+}
+@media(max-width:640px){
+  .proof-row{grid-template-columns:72px 1fr}
+  .service-card{min-height:205px}
+}
+
+
+/* ===== v11.3 patriotic richness + targeted media ===== */
+/* Color roles: navy = structure, cream = editorial, red = energy, light blue = accent. */
+.eyebrow.light{color:rgba(255,255,255,.78)}
+
+/* HOME / editorial intro: use the available space like an editorial spread rather than a tiny card. */
+.studio{border-top:5px solid var(--paper)}
+.studio-grid{grid-template-columns:.88fr 1.12fr;gap:7vw;align-items:center}
+.studio-label{padding-top:0;gap:24px}
+.studio-media{position:relative;width:min(100%,560px);padding:0 72px 58px 0}
+.studio-photo{margin:0;width:100%}
+.studio-photo-main img{aspect-ratio:4/5;object-fit:cover;filter:saturate(.82) contrast(1.04)}
+.studio-photo-main figcaption{color:#536476}
+.studio-photo-inset{position:absolute;width:44%;right:0;bottom:0;margin:0;border:10px solid var(--cream);box-shadow:0 18px 50px rgba(10,35,66,.13)}
+.studio-photo-inset img{aspect-ratio:1/1.08;object-fit:cover;filter:saturate(.85) contrast(1.02)}
+.studio-media:before{content:"";position:absolute;left:-18px;top:42px;width:5px;height:38%;background:var(--red);z-index:2}
+.studio-media:after{content:"";position:absolute;right:54px;top:-14px;width:76px;height:5px;background:var(--blue);z-index:2}
+.studio-copy{padding:26px 0}
+.studio-copy .quiet{display:inline-block;padding:12px 16px;border-left:3px solid var(--red);background:rgba(120,173,216,.09)}
+
+/* HOME / make red a real chapter, not just a button color. */
+.visual-story{background:var(--red)}
+.visual-copy{background:var(--red);color:#fff;position:relative;overflow:hidden}
+.visual-copy:before{content:"";position:absolute;right:-120px;top:-120px;width:330px;height:330px;border:46px solid rgba(255,255,255,.065);border-radius:50%}
+.visual-copy h2{color:#fff;position:relative}
+.visual-copy h2 br+*{color:inherit}
+.visual-copy p{color:rgba(255,255,255,.78);position:relative}
+.visual-copy .proof-list{border-color:rgba(255,255,255,.25);position:relative}
+.visual-copy .proof-row{border-color:rgba(255,255,255,.22)}
+.visual-copy .proof-row b{color:#fff}
+.visual-copy .proof-row strong{color:#fff}
+.visual-media:after{background:linear-gradient(0deg,rgba(10,35,66,.42),transparent 48%)}
+.visual-story:after{content:"";position:absolute;display:none}
+
+/* HOME / process stays quiet, but earns a little patriotic punctuation. */
+.process{position:relative;overflow:hidden}
+.process:before{content:"";position:absolute;left:0;top:0;width:34%;height:4px;background:var(--red)}
+.process:after{content:"";position:absolute;left:34%;top:0;width:18%;height:4px;background:var(--blue)}
+.roman{color:var(--navy)}
+.step:nth-child(2) .roman{color:var(--red)}
+.step:nth-child(3) .roman{color:var(--blue)}
+
+/* CTA: white headline + blue accent, with the red/white/blue baseline retained. */
+.cta-side{padding-left:24px;border-left:3px solid var(--red)}
+
+/* ABOUT: photo helps the second editorial section feel intentional rather than empty. */
+.about-standard{position:relative}
+.standard-photo{margin-top:44px;width:min(100%,500px);position:relative;padding-right:22px;padding-bottom:22px}
+.standard-photo:before{content:"";position:absolute;right:0;bottom:0;width:55%;height:55%;background:var(--blue);opacity:.22}
+.standard-photo img{position:relative;z-index:1;width:100%;aspect-ratio:16/10;object-fit:cover;filter:saturate(.78) contrast(1.04)}
+.about-standard .split-copy>div:last-child{padding-top:16px}
+
+/* SERVICES: keep the premium dark cards, but make the intro feel more branded. */
+.service-intro-copy{position:relative;overflow:hidden}
+.service-intro-copy:before{content:"";position:absolute;top:0;left:0;width:100%;height:5px;background:linear-gradient(90deg,var(--red) 0 36%,#fff 36% 68%,var(--blue) 68%)}
+.service-intro-copy:after{content:"";position:absolute;right:-105px;bottom:-105px;width:260px;height:260px;border:34px solid rgba(120,173,216,.12);border-radius:50%}
+.service-intro-copy>*{position:relative;z-index:1}
+.services-grid-section{border-top:5px solid var(--red)}
+.service-card:nth-child(3n+1):before{background:var(--red)}
+.service-card:nth-child(3n+2):before{background:var(--blue)}
+.service-card:nth-child(3n):before{background:#fff}
+
+/* CONTACT: give the media chapter a red copy field to balance the navy page hero. */
+.contact-visual{background:var(--red)}
+.contact-visual-caption{background:var(--red);position:relative;overflow:hidden}
+.contact-visual-caption:after{content:"";position:absolute;right:-85px;bottom:-90px;width:220px;height:220px;border:30px solid rgba(255,255,255,.08);border-radius:50%}
+.contact-visual-caption>*{position:relative;z-index:1}
+.contact-visual-caption>p:last-child{color:#fff}
+.contact-visual-image:after{background:linear-gradient(90deg,rgba(10,35,66,.08),rgba(10,35,66,.3))}
+
+/* Inner heroes: stronger patriotic edge, still restrained. */
+.page-hero{border-bottom:5px solid var(--red)}
+.page-hero:after{content:"";position:absolute;bottom:-5px;left:34%;width:17%;height:5px;background:#fff;z-index:4}
+.page-hero:before{content:"";position:absolute;bottom:-5px;left:51%;width:17%;height:5px;background:var(--blue);z-index:4}
+
+@media(max-width:980px){
+  .studio-grid{grid-template-columns:1fr;gap:54px}
+  .studio-media{width:min(100%,620px)}
+  .visual-story{background:var(--red)}
+  .standard-photo{width:min(100%,620px)}
+}
+@media(max-width:640px){
+  .studio-media{padding:0 42px 44px 0}
+  .studio-photo-inset{border-width:7px;width:46%}
+  .studio-media:after{right:30px}
+  .cta-side{padding-left:18px}
+  .contact-visual-caption{min-height:250px}
+}
+
+/* ===== v11.4 proportion + hierarchy pass ===== */
+/* Inner-page heroes should introduce the page, not consume it. */
+.page-hero-inner{min-height:350px;padding:64px 0 58px;grid-template-columns:1.15fr .85fr;gap:58px}
+.page-hero h1{font-size:clamp(56px,6vw,88px);max-width:820px}
+.page-art-ribbon{top:-8px;width:min(43vw,590px)}
+.page-art-shield{width:118px}
+
+/* ABOUT / local facts: one full-width band, no navy box inside navy box. */
+.local-strip{padding:0;background:var(--navy);border-top:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14)}
+.local-strip .shell{width:100%;max-width:none}
+.local-strip-grid{gap:0;background:transparent}
+.local-item{background:transparent;padding:38px clamp(38px,5vw,82px);border-right:1px solid rgba(255,255,255,.15);min-height:150px;display:flex;flex-direction:column;justify-content:center}
+.local-item:last-child{border-right:0}
+.local-item:before{height:3px;right:auto;width:100%;opacity:.95}
+
+/* ABOUT / standard: one balanced story, not headline+photo fighting copy across the page. */
+.about-standard{padding:96px 0}
+.standard-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:7vw;align-items:center}
+.standard-copy h2{font:600 clamp(52px,5vw,76px)/.96 "Manrope";letter-spacing:-.055em;margin:16px 0 28px;max-width:650px}
+.standard-copy>p{font-size:18px;color:#596979;max-width:640px}
+.standard-copy .actions{margin-top:28px}
+.standard-photo{margin:0;width:100%;padding:0;position:relative;overflow:hidden;min-height:460px}
+.standard-photo:before{display:none}
+.standard-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;aspect-ratio:auto;filter:saturate(.8) contrast(1.04)}
+
+/* HOME / services: preserve the editorial rows but fix the squeezed headline and dead space. */
+.capabilities{padding:96px 0 88px}
+.cap-head{grid-template-columns:1.15fr .85fr;gap:7vw;align-items:end;margin-bottom:46px}
+.cap-head h2{font-size:clamp(50px,5.1vw,76px);max-width:760px}
+.cap-head p{max-width:500px;font-size:17px;margin-bottom:4px}
+.cap-row{min-height:116px;grid-template-columns:58px minmax(300px,1.05fr) 1.1fr 40px;gap:22px}
+.cap-row h3{font-size:clamp(26px,2.5vw,38px)}
+.cap-footer{padding-top:26px}
+
+/* HOME / process: headline and explanation belong to the same composition. */
+.process{padding:94px 0 88px}
+.process-head{grid-template-columns:1.15fr .85fr;gap:7vw;align-items:end;margin-bottom:44px}
+.process-head h2{font-size:clamp(50px,5.1vw,74px);max-width:660px}
+.process-head>p{max-width:430px;margin:0 0 6px;color:#596979;font-size:17px}
+.step{min-height:230px;padding:34px 34px 40px 0}
+.step+.step{padding-left:34px}
+.roman{font-size:34px;margin-bottom:34px}
+.step h3{font-size:23px}
+.process-note{margin-top:32px}
+
+/* SERVICES / get the catalog into view much sooner. */
+.page-services .page-hero-inner{min-height:315px;padding:52px 0 50px}
+.service-intro-media{grid-template-columns:.92fr 1.08fr;min-height:380px}
+.service-intro-image{min-height:380px}
+.service-intro-copy{padding:56px clamp(42px,5vw,78px)}
+.service-intro-copy h2{font-size:clamp(42px,4.2vw,62px);margin:14px 0 20px;max-width:650px}
+.service-intro-copy>p:last-child{font-size:17px}
+.services-grid-section{padding:58px 0 92px;border-top:4px solid var(--red)}
+.service-card{min-height:215px;padding:28px}
+.service-card h3{margin-top:34px}
+
+/* CONTACT / closing media is an accent, not another hero. */
+.contact-visual{min-height:230px;grid-template-columns:1.45fr .55fr}
+.contact-visual-image{min-height:230px}
+.contact-visual-caption{padding:38px 44px}
+.contact-visual-caption>p:last-child{font-size:clamp(23px,2vw,32px);max-width:310px}
+
+@media(max-width:980px){
+  .local-strip .shell{width:min(calc(100% - 64px),var(--max))}
+  .local-strip{padding:40px 0}
+  .local-strip-grid{grid-template-columns:1fr}
+  .local-item{border-right:0;border-bottom:1px solid rgba(255,255,255,.15);min-height:auto;padding:26px 0}
+  .local-item:last-child{border-bottom:0}
+  .standard-layout{grid-template-columns:1fr;gap:44px}
+  .standard-photo{min-height:420px}
+  .cap-head,.process-head{grid-template-columns:1fr;gap:24px}
+  .service-intro-media{grid-template-columns:1fr;min-height:0}
+  .service-intro-image{min-height:350px}
+  .contact-visual{grid-template-columns:1fr}
+  .contact-visual-image{min-height:240px}
+}
+@media(max-width:640px){
+  .page-hero-inner,.page-services .page-hero-inner{min-height:300px;padding:48px 0 44px}
+  .about-standard{padding:76px 0}
+  .standard-photo{min-height:320px}
+  .capabilities,.process{padding:76px 0}
+  .cap-row{min-height:140px}
+  .service-intro-copy{padding:48px 24px}
+  .services-grid-section{padding:44px 0 76px}
+  .contact-visual-caption{padding:34px 24px}
+}
+
+
+/* ===== v11.5 SERVICES PAGE: cards first, tighter opening ===== */
+.page-services .page-hero{min-height:0}
+.page-services .page-hero-inner{
+  min-height:220px;
+  padding:34px 0 30px;
+  grid-template-columns:1.05fr .75fr;
+  gap:44px;
+  align-items:center;
+}
+.page-services .page-hero h1{
+  font-size:clamp(48px,5.2vw,76px);
+  line-height:.91;
+  max-width:720px;
+  margin-top:10px;
+}
+.page-services .page-hero p{font-size:16px;max-width:410px;margin:0}
+.page-services .page-art-ribbon{
+  right:-4%;
+  top:-38px;
+  width:min(38vw,520px);
+  opacity:.18;
+}
+.page-services .page-art-seal{
+  position:absolute;
+  right:5.8%;
+  bottom:-34px;
+  width:118px;
+  opacity:.18;
+  z-index:1;
+  animation:shieldFloat 8s ease-in-out infinite alternate;
+}
+
+.page-services .service-intro-media{
+  min-height:255px;
+  grid-template-columns:.72fr 1.28fr;
+  border-bottom:1px solid var(--line);
+}
+.page-services .service-intro-image{min-height:255px}
+.page-services .service-intro-image img{object-position:center 46%}
+.page-services .service-intro-copy{
+  padding:34px clamp(42px,5vw,78px);
+  justify-content:center;
+}
+.page-services .service-intro-copy h2{
+  font-size:clamp(38px,4.2vw,62px);
+  margin:10px 0 15px;
+  max-width:760px;
+}
+.page-services .service-intro-copy>p:last-child{
+  font-size:15px;
+  line-height:1.55;
+  max-width:620px;
+}
+.page-services .services-grid-section{padding-top:42px;padding-bottom:82px}
+.page-services .service-grid{margin-top:0}
+.page-services .service-card{min-height:205px;padding:26px}
+.page-services .service-card h3{margin-top:30px;font-size:23px}
+.page-services .service-card p{font-size:14px}
+
+@media(max-width:980px){
+  .page-services .page-hero-inner{min-height:245px;padding:40px 0 36px;grid-template-columns:1fr}
+  .page-services .page-art-seal{width:94px;right:4%;bottom:-26px}
+  .page-services .service-intro-media{grid-template-columns:1fr;min-height:0}
+  .page-services .service-intro-image{min-height:300px}
+  .page-services .service-intro-copy{padding:44px 5vw}
+  .page-services .services-grid-section{padding-top:48px}
+}
+@media(max-width:640px){
+  .page-services .page-hero-inner{min-height:220px;padding:34px 0 30px}
+  .page-services .page-hero h1{font-size:48px}
+  .page-services .page-art-seal{width:76px;bottom:-20px}
+  .page-services .service-intro-image{min-height:230px}
+  .page-services .service-intro-copy{padding:36px 24px}
+  .page-services .service-intro-copy h2{font-size:42px}
+  .page-services .services-grid-section{padding-top:36px}
+}
+
+
+/* ===== V11.6 SERVICES RESET =====
+   Keep the newer compact hero, but return the catalog to the older,
+   tighter service-card logic and the selected patriotic corner sweep. */
+.page-services .page-hero{
+  border-bottom:4px solid var(--red);
+}
+.page-services .page-hero::before,
+.page-services .page-hero::after{
+  display:none !important;
+  content:none !important;
+}
+
+/* The catalog is the point of this page: it begins immediately after the hero. */
+.page-services .services-grid-section{
+  padding:38px 0 74px;
+  background:var(--navy);
+  border-top:0;
+}
+.page-services .service-grid{
+  margin:0;
+  border-top:1px solid rgba(255,255,255,.14);
+  border-left:1px solid rgba(255,255,255,.14);
+  background:var(--navy);
+}
+.page-services .service-card{
+  min-height:178px;
+  padding:24px 26px 22px;
+  overflow:hidden;
+  background:var(--navy);
+  border-right:1px solid rgba(255,255,255,.14);
+  border-bottom:1px solid rgba(255,255,255,.14);
+  transition:background .22s ease;
+}
+.page-services .service-card::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:3px;
+  height:100%;
+  background:var(--red);
+  transform:scaleY(.26);
+  transform-origin:top;
+  transition:transform .28s ease;
+}
+.page-services .service-card:nth-child(3n+2)::before{background:var(--blue)}
+.page-services .service-card:nth-child(3n)::before{background:#fff}
+.page-services .service-card:hover{background:#102e51}
+.page-services .service-card:hover::before{transform:scaleY(1)}
+
+/* Selected patriotic corner treatment from the earlier design direction. */
+.page-services .service-card::after{
+  content:"";
+  position:absolute;
+  right:0;
+  top:0;
+  width:86px;
+  height:56px;
+  background:url('assets/refined-ribbon-sweep.svg') top right/contain no-repeat;
+  opacity:.9;
+  pointer-events:none;
+  transform:none;
+  border:0;
+  border-radius:0;
+  transition:transform .3s ease,opacity .3s ease;
+}
+.page-services .service-card:hover::after{
+  transform:translate(-3px,3px);
+  opacity:1;
+  border-color:transparent;
+}
+.page-services .service-card .num{
+  color:var(--blue);
+  font-size:10px;
+}
+.page-services .service-card h3{
+  color:#fff;
+  margin:28px 0 8px;
+  font-size:21px;
+  line-height:1.16;
+}
+.page-services .service-card p{
+  color:#bdc8d2;
+  font-size:14px;
+  line-height:1.52;
+  max-width:94%;
+}
+
+/* Keep the current hero composition, but make the brand mark feel integrated. */
+.page-services .page-art-seal{
+  width:112px;
+  right:5%;
+  bottom:-32px;
+  opacity:.22;
+}
+
+@media(max-width:980px){
+  .page-services .services-grid-section{padding:34px 0 64px}
+  .page-services .service-card{min-height:170px}
+  .page-services .service-card::after{width:76px;height:50px}
+}
+@media(max-width:640px){
+  .page-services .services-grid-section{padding:28px 0 54px}
+  .page-services .service-card{min-height:156px;padding:22px}
+  .page-services .service-card h3{margin-top:24px;font-size:20px}
+  .page-services .service-card::after{width:68px;height:44px}
+  .page-services .page-art-seal{width:72px;bottom:-20px}
+}
+
+/* v11.7 — proportion polish */
+/* Keep the transparent header logo optically centered in the 86px bar. */
+.site-header .brand{
+  height:100%;
+  display:flex;
+  align-items:center;
+  transform:translateY(-5px);
+}
+.site-header .brand img{display:block}
+
+/* Contact closing media should read as a short visual sign-off, not a second hero. */
+.page-contact .contact-visual{
+  height:240px;
+  min-height:240px;
+  grid-template-columns:1.6fr .4fr;
+}
+.page-contact .contact-visual-image{
+  height:240px;
+  min-height:0;
+}
+.page-contact .contact-visual-image img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 46%;
+}
+.page-contact .contact-visual-caption{
+  height:240px;
+  min-height:0;
+  padding:30px 38px;
+}
+.page-contact .contact-visual-caption>p:last-child{
+  font-size:clamp(21px,1.75vw,29px);
+  max-width:280px;
+}
+
+@media(max-width:980px){
+  .page-contact .contact-visual{height:auto;min-height:0;grid-template-columns:1fr}
+  .page-contact .contact-visual-image{height:220px;min-height:220px}
+  .page-contact .contact-visual-caption{height:auto;min-height:190px;padding:32px 28px}
+}
+@media(max-width:640px){
+  .site-header .brand{transform:translateY(-3px)}
+  .page-contact .contact-visual-image{height:190px;min-height:190px}
+  .page-contact .contact-visual-caption{min-height:165px;padding:28px 24px}
+}
