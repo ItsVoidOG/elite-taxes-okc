@@ -1951,3 +1951,14 @@ html{scrollbar-gutter:stable;}
     line-height:1.12;
   }
 }
+
+/* v4.37 — desktop inner-page hero alignment.
+   Match About / Services / Contact to the homepage's standard shell.
+   Desktop only; tablet/mobile remain unchanged. */
+@media (min-width:1200px){
+  .page-about .page-hero-inner,
+  .page-services .page-hero-inner,
+  .page-contact .page-hero-inner{
+    width:min(calc(100% - 64px),var(--max));
+  }
+}
