@@ -1736,3 +1736,80 @@ html{scrollbar-gutter:stable;}
     font-size:7.7px;
   }
 }
+
+/* v4.28 — polish mobile logo/address lockup + keep service arrows on-screen. */
+@media (max-width:640px){
+  .header-brand-block{gap:1px}
+  .header-address{
+    width:142px;
+    margin-top:-1px;
+    margin-left:52px;
+    padding:0;
+    text-align:left;
+    font-size:7.8px;
+    line-height:1.2;
+    font-weight:600;
+    letter-spacing:.012em;
+    color:rgba(255,255,255,.82);
+    white-space:nowrap;
+  }
+
+  .cap-row{
+    grid-template-columns:42px minmax(0,1fr) 24px;
+    grid-template-rows:auto auto;
+    column-gap:12px;
+    row-gap:8px;
+    min-width:0;
+    padding-left:0;
+    padding-right:0;
+  }
+  .cap-num{
+    grid-column:1;
+    grid-row:1;
+    padding-top:4px;
+  }
+  .cap-row h3{
+    grid-column:2;
+    grid-row:1;
+    min-width:0;
+    max-width:100%;
+    font-size:23px;
+    line-height:1.05;
+    overflow-wrap:break-word;
+  }
+  .cap-row p{
+    grid-column:2;
+    grid-row:2;
+    min-width:0;
+    max-width:100%;
+    margin:0;
+  }
+  .cap-row .cap-arrow{
+    display:block;
+    visibility:visible;
+    opacity:1;
+    grid-column:3;
+    grid-row:1 / span 2;
+    align-self:center;
+    justify-self:end;
+    position:relative;
+    right:0;
+    min-width:0;
+    font-size:19px;
+    line-height:1;
+  }
+}
+
+@media (max-width:370px){
+  .header-address{
+    width:136px;
+    margin-left:49px;
+    font-size:7.5px;
+  }
+  .cap-row{
+    grid-template-columns:38px minmax(0,1fr) 22px;
+    column-gap:10px;
+  }
+  .cap-row h3{font-size:21px}
+  .cap-row .cap-arrow{font-size:18px}
+}
