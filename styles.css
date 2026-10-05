@@ -1836,3 +1836,118 @@ html{scrollbar-gutter:stable;}
   .cap-row h3{font-size:21px}
   .cap-row .cap-arrow{font-size:18px}
 }
+
+/* v4.30 — phone address lockup matches the full rendered logo width. */
+@media (max-width:640px){
+  .header-brand-block{
+    width:174px;
+    flex:0 0 174px;
+    align-items:flex-start;
+  }
+  .site-header .header-brand-block .brand,
+  .site-header .header-brand-block .brand picture,
+  .site-header .header-brand-block .brand img{
+    width:174px;
+    max-width:174px;
+  }
+  .header-address{
+    box-sizing:border-box;
+    width:174px;
+    max-width:174px;
+    margin:4px 0 0;
+    padding:0;
+    text-align:center;
+    font-size:9px;
+    line-height:1.22;
+    font-weight:600;
+    letter-spacing:.012em;
+    color:rgba(255,255,255,.84);
+    white-space:nowrap;
+  }
+}
+
+@media (max-width:370px){
+  .header-brand-block{
+    width:166px;
+    flex-basis:166px;
+  }
+  .site-header .header-brand-block .brand,
+  .site-header .header-brand-block .brand picture,
+  .site-header .header-brand-block .brand img{
+    width:166px;
+    max-width:166px;
+  }
+  .header-address{
+    width:166px;
+    max-width:166px;
+    font-size:8.6px;
+  }
+}
+
+/* v4.32 — mobile address spans the logo naturally, without justified word spacing. */
+@media (max-width:640px){
+  .header-brand-block{
+    width:174px;
+    flex:0 0 174px;
+    align-items:flex-start;
+  }
+  .site-header .header-brand-block .brand,
+  .site-header .header-brand-block .brand picture,
+  .site-header .header-brand-block .brand img{
+    width:174px;
+    max-width:174px;
+  }
+  .header-address{
+    box-sizing:border-box;
+    width:174px;
+    max-width:174px;
+    margin:5px 0 0;
+    padding:0;
+    text-align:center;
+    font-size:11px;
+    line-height:1.18;
+    font-weight:600;
+    letter-spacing:0;
+    color:rgba(255,255,255,.84);
+    white-space:nowrap;
+  }
+}
+
+@media (max-width:370px){
+  .header-brand-block{
+    width:166px;
+    flex-basis:166px;
+  }
+  .site-header .header-brand-block .brand,
+  .site-header .header-brand-block .brand picture,
+  .site-header .header-brand-block .brand img{
+    width:166px;
+    max-width:166px;
+  }
+  .header-address{
+    width:166px;
+    max-width:166px;
+    font-size:10.5px;
+  }
+}
+
+/* v4.33 — mobile address belongs to the logo lockup, not a centered caption. */
+@media (max-width:640px){
+  .header-address{
+    margin-top:1px;
+    margin-left:0;
+    text-align:left;
+    font-size:10.4px;
+    line-height:1.12;
+    letter-spacing:0;
+    color:rgba(255,255,255,.82);
+  }
+}
+
+@media (max-width:370px){
+  .header-address{
+    margin-top:1px;
+    font-size:10px;
+    line-height:1.12;
+  }
+}
