@@ -1737,21 +1737,42 @@ html{scrollbar-gutter:stable;}
   }
 }
 
-/* v4.28 — polish mobile logo/address lockup + keep service arrows on-screen. */
+/* v4.29 — mobile header address spans the full logo lockup; process heading gets a cleaner phone layout. */
 @media (max-width:640px){
-  .header-brand-block{gap:1px}
+  .header-brand-block{
+    gap:1px;
+    align-items:flex-start;
+  }
   .header-address{
-    width:142px;
-    margin-top:-1px;
+    width:178px;
+    max-width:calc(100vw - 120px);
+    margin-top:0;
     margin-left:52px;
     padding:0;
     text-align:left;
-    font-size:7.8px;
-    line-height:1.2;
+    font-size:8.9px;
+    line-height:1.22;
     font-weight:600;
-    letter-spacing:.012em;
-    color:rgba(255,255,255,.82);
-    white-space:nowrap;
+    letter-spacing:.008em;
+    color:rgba(255,255,255,.84);
+    white-space:normal;
+  }
+
+  .process-head{
+    gap:18px;
+    margin-bottom:30px;
+  }
+  .process-head h2{
+    font-size:42px;
+    line-height:.94;
+    letter-spacing:-.055em;
+    max-width:100%;
+  }
+  .process-head .process-balance{display:inline}
+  .process-head>p{
+    max-width:100%;
+    font-size:15px;
+    line-height:1.52;
   }
 
   .cap-row{
@@ -1802,10 +1823,12 @@ html{scrollbar-gutter:stable;}
 
 @media (max-width:370px){
   .header-address{
-    width:136px;
+    width:170px;
+    max-width:calc(100vw - 106px);
     margin-left:49px;
-    font-size:7.5px;
+    font-size:8.5px;
   }
+  .process-head h2{font-size:39px}
   .cap-row{
     grid-template-columns:38px minmax(0,1fr) 22px;
     column-gap:10px;
