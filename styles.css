@@ -1711,3 +1711,28 @@ html{scrollbar-gutter:stable;}
   .desktop-nav{min-width:360px;justify-content:center;}
   .desktop-nav .facebook-link{flex:0 0 auto;}
 }
+
+/* v4.27 — refine mobile address as part of the logo lockup. */
+@media (max-width:640px){
+  .header-address{
+    width:134px;
+    margin-top:2px;
+    margin-left:40px;
+    padding:0;
+    text-align:left;
+    font-size:8px;
+    line-height:1.28;
+    font-weight:500;
+    letter-spacing:.01em;
+    color:rgba(255,255,255,.76);
+    white-space:nowrap;
+  }
+}
+
+@media (max-width:370px){
+  .header-address{
+    width:128px;
+    margin-left:38px;
+    font-size:7.7px;
+  }
+}
