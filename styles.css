@@ -1962,3 +1962,102 @@ html{scrollbar-gutter:stable;}
     width:min(calc(100% - 64px),var(--max));
   }
 }
+
+/* Language selector — fixed, accessible and independent of the page layout. */
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.site-language-switcher{
+  position:fixed;
+  z-index:100;
+  right:20px;
+  bottom:20px;
+  bottom:max(20px, env(safe-area-inset-bottom));
+  display:flex;
+  align-items:center;
+  gap:8px;
+  min-height:44px;
+  padding:5px 11px;
+  border:1px solid rgba(255,255,255,.32);
+  border-radius:999px;
+  background:#0a2342;
+  color:#fff;
+  box-shadow:0 7px 26px rgba(0,0,0,.25);
+  direction:ltr;
+}
+.site-language-switcher .language-globe{font:20px/1 sans-serif}
+.site-language-switcher select{
+  max-width:118px;
+  min-height:34px;
+  padding:0 17px 0 1px;
+  border:0;
+  background:transparent;
+  color:inherit;
+  font:700 13px/1.2 "DM Sans",Tahoma,Arial,sans-serif;
+  cursor:pointer;
+  color-scheme:dark;
+}
+.site-language-switcher select option{background:#0a2342;color:#fff}
+.site-language-switcher select:focus-visible{outline:2px solid #a9cce6;outline-offset:3px;border-radius:3px}
+@media(max-width:640px){
+  .site-language-switcher{right:12px;bottom:12px;bottom:max(12px, env(safe-area-inset-bottom));padding:4px 9px}
+}
+
+/* Arabic content uses RTL reading order without flipping the floating control. */
+html[lang="ar"] body{font-family:Tahoma,Arial,sans-serif}
+html[lang="ar"] .eyebrow,
+html[lang="ar"] .desktop-nav,
+html[lang="ar"] .footer-nav,
+html[lang="ar"] .button,
+html[lang="ar"] .text-link,
+html[lang="ar"] .label,
+html[lang="ar"] .contact-note span,
+html[lang="ar"] .local-item span,
+html[lang="ar"] .marquee-track{letter-spacing:0;text-transform:none}
+html[lang="ar"] .hero h1{font:600 clamp(52px,6.2vw,92px)/1.22 Tahoma,Arial,sans-serif;letter-spacing:0}
+html[lang="ar"] .page-hero h1{font:600 clamp(44px,5.6vw,82px)/1.24 Tahoma,Arial,sans-serif;letter-spacing:0}
+html[lang="ar"] .studio-copy h2,
+html[lang="ar"] .cap-head h2,
+html[lang="ar"] .visual-copy h2,
+html[lang="ar"] .process-head h2,
+html[lang="ar"] .cta h2,
+html[lang="ar"] .about-panel h2,
+html[lang="ar"] .standard-copy h2,
+html[lang="ar"] .contact-copy h2{font-family:Tahoma,Arial,sans-serif;line-height:1.25;letter-spacing:0}
+html[lang="ar"] .step h3,
+html[lang="ar"] .service-card h3,
+html[lang="ar"] .cap-row h3,
+html[lang="ar"] .quick-contact h2{font-family:Tahoma,Arial,sans-serif;line-height:1.3;letter-spacing:0}
+html[lang="ar"] .button,
+html[lang="ar"] .text-link{font-size:13px}
+html[lang="ar"] .hero-media:after{
+  background:linear-gradient(270deg,rgba(6,24,45,.94) 0%,rgba(6,24,45,.72) 43%,rgba(6,24,45,.18) 78%,rgba(6,24,45,.08) 100%);
+}
+html[lang="ar"] .hero-scroll{right:auto;left:32px}
+html[lang="ar"] .hero-meta span+span:before{margin-right:0;margin-left:22px}
+html[lang="ar"] .cap-row h3,
+html[lang="ar"] .service-card h3,
+html[lang="ar"] .hero h1,
+html[lang="ar"] .page-hero h1{overflow-wrap:break-word}
+html[lang="ar"] .header-address,
+html[lang="ar"] .contact-panel a[href^="tel:"],
+html[lang="ar"] .contact-panel a[href^="mailto:"],
+html[lang="ar"] .contact-panel address{
+  direction:ltr;
+  unicode-bidi:isolate;
+}
+html[lang="ar"] .contact-panel a[href^="tel:"],
+html[lang="ar"] .contact-panel a[href^="mailto:"]{display:inline-block}
+html[lang="ar"] .step{border-right:0;border-left:1px solid var(--line);padding:42px 0 48px 40px}
+html[lang="ar"] .step+.step{padding-left:0;padding-right:40px}
+html[lang="ar"] .step:last-child{border-left:0}
+html[lang="es"] .hero h1{font-size:clamp(54px,7vw,102px);overflow-wrap:break-word}
+@media(max-width:980px){
+  html[lang="ar"] .step,
+  html[lang="ar"] .step+.step{border-left:0;padding:34px 0}
+}
+@media(max-width:640px){
+  html[lang="ar"] .hero h1{font-size:clamp(42px,10vw,56px)}
+  html[lang="ar"] .page-hero h1{font-size:clamp(38px,9vw,50px)}
+  html[lang="es"] .hero h1{font-size:clamp(43px,10vw,56px)}
+  html[lang="ar"] .hero-meta{gap:10px}
+  html[lang="ar"] .hero-meta span+span:before{width:18px;margin-left:10px}
+}
