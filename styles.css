@@ -2109,3 +2109,41 @@ html[lang="es"] .hero h1{font-size:clamp(54px,7vw,102px);overflow-wrap:break-wor
   html[lang="es"] .page-hero h1{font-size:clamp(38px,9vw,48px)}
   html[lang="es"] .hero h1{font-size:clamp(43px,10vw,56px)}
 }
+
+/* Desktop hero translation rhythm.
+   Longer Spanish and Arabic headings need different widths and typography to
+   follow English's two-line/three-line breakpoints. Keep the original English
+   composition and all laptop/tablet/mobile styles completely untouched. */
+@media (min-width:1660px) and (max-width:1999px){
+  html[lang="es"] .hero-copy{max-width:clamp(820px,47.9vw,920px)}
+  html[lang="es"] .hero h1{
+    font-size:clamp(91px,5.5vw,103px);
+    line-height:1;
+    margin-bottom:26px;
+  }
+  html[lang="ar"] .hero-copy{max-width:clamp(535px,32.3vw,620px)}
+  html[lang="ar"] .hero h1{
+    font-size:clamp(84px,5vw,96px);
+    line-height:1.075;
+    margin-bottom:26px;
+  }
+}
+/* English fits on two lines at these narrower desktop widths. */
+@media (min-width:1660px) and (max-width:1879px){
+  html[lang="es"] .hero-copy{max-width:980px}
+  html[lang="ar"] .hero-copy{max-width:800px}
+}
+@media (min-width:2000px){
+  html[lang="es"] .hero-copy{max-width:1010px}
+  html[lang="es"] .hero h1{
+    font-size:114px;
+    line-height:1.01;
+    margin-bottom:30px;
+  }
+  html[lang="ar"] .hero-copy{max-width:670px}
+  html[lang="ar"] .hero h1{
+    font-size:106px;
+    line-height:1.09;
+    margin-bottom:30px;
+  }
+}
