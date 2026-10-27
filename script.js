@@ -32,7 +32,7 @@ document.querySelectorAll('.cap-list, .process-steps, .trust-cards, .service-gri
   ],
   [
     "Oklahoma City",
-    "Ciudad de Oklahoma",
+    "Oklahoma City",
     "أوكلاهوما سيتي"
   ],
   [
@@ -102,12 +102,12 @@ document.querySelectorAll('.cap-list, .process-steps, .trust-cards, .service-gri
   ],
   [
     "We treat it that",
-    "Por eso los tratamos",
+    "Y así los",
     "ولهذا نتعامل معها"
   ],
   [
     "way.",
-    "como tal.",
+    "tratamos.",
     "على هذا الأساس."
   ],
   [
@@ -347,7 +347,7 @@ document.querySelectorAll('.cap-list, .process-steps, .trust-cards, .service-gri
   ],
   [
     "Clear work.",
-    "Trabajo claro.",
+    "Procesos claros.",
     "عمل واضح."
   ],
   [
@@ -392,7 +392,7 @@ document.querySelectorAll('.cap-list, .process-steps, .trust-cards, .service-gri
   ],
   [
     "Workers Compensation",
-    "Compensación laboral",
+    "Compensación de trabajadores",
     "تعويضات العمال"
   ],
   [
@@ -407,7 +407,7 @@ document.querySelectorAll('.cap-list, .process-steps, .trust-cards, .service-gri
   ],
   [
     "Power of Attorney",
-    "Poder de representación",
+    "Poder legal",
     "التوكيل الرسمي"
   ],
   [
@@ -438,7 +438,7 @@ document.querySelectorAll('.cap-list, .process-steps, .trust-cards, .service-gri
   [
     "Tax Credits",
     "Créditos fiscales",
-    "الإعفاءات والائتمانات الضريبية"
+    "الائتمانات الضريبية"
   ],
   [
     "Help identifying applicable credits and opportunities based on your specific tax situation.",
