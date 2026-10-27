@@ -679,7 +679,9 @@ document.querySelectorAll('.cap-list, .process-steps, .trust-cards, .service-gri
     }
 
     document.documentElement.setAttribute('lang', language);
-    document.documentElement.setAttribute('dir', language === 'ar' ? 'rtl' : 'ltr');
+    // Keep the established page/grid composition LTR in every language.
+    // Arabic text direction is scoped to content in CSS instead.
+    document.documentElement.setAttribute('dir', 'ltr');
     label.textContent = labels[language];
     select.setAttribute('aria-label', labels[language]);
     select.value = language;
