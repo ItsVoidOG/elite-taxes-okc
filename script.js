@@ -503,7 +503,7 @@ document.querySelectorAll('.cap-list, .process-steps, .trust-cards, .service-gri
   [
     "Tell us what you need help with.",
     "Cuéntenos en qué podemos ayudarle.",
-    "أخبرنا بما تحتاج إلى مساعدة فيه."
+    "كيف يمكننا مساعدتك؟"
   ],
   [
     "Call or email Elite Taxes OKC with a brief description of your tax situation. We’ll help you determine the next step.",
