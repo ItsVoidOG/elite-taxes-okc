@@ -541,6 +541,11 @@ document.querySelectorAll('.cap-list, .process-steps, .trust-cards, .service-gri
     "Elite Taxes OKC على فيسبوك"
   ],
   [
+    "Elite Taxes OKC on Instagram",
+    "Elite Taxes OKC en Instagram",
+    "Elite Taxes OKC على إنستغرام"
+  ],
+  [
     "Tax forms and financial documents",
     "Formularios fiscales y documentos financieros",
     "نماذج ضريبية ومستندات مالية"
