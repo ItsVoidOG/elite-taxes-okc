@@ -2243,3 +2243,12 @@ html[lang="es"] .hero h1{font-size:clamp(54px,7vw,102px);overflow-wrap:break-wor
   .mobile-menu-inner{display:grid;gap:15px}
   .hero h1{font-size:76px;line-height:.94}
 }
+
+/* Contact links: underline the address and email on hover or keyboard focus. */
+.contact-panel address a:hover,
+.contact-panel address a:focus-visible,
+.contact-panel a[href^="mailto:"]:hover,
+.contact-panel a[href^="mailto:"]:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
