@@ -418,8 +418,12 @@ window.addEventListener("pageshow", function(e){
   if (!ready) {
     submit.disabled = true;
     submit.title = tr('Encrypted PDF download is unavailable in this browser.');
-    if(notice) notice.textContent = tr('PRIVATE TEST ONLY — Encrypted PDF download is unavailable in this browser.');
+    if(notice) {
+      notice.hidden = false;
+      notice.textContent = tr('Encrypted PDF download is unavailable in this browser.');
+    }
   } else if (notice) {
-    notice.textContent = tr('PRIVATE TEST ONLY — This form has not been security-approved for real taxpayer information.');
+    notice.hidden = true;
+    notice.textContent = '';
   }
 })();
