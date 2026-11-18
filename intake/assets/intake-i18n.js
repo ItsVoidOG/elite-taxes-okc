@@ -1,4 +1,4 @@
-/* Local, preview-only intake UI localization. Tax/legal text requires professional review before publication.
+/* Local intake UI localization. Tax/legal translations should be professionally reviewed.
    Runs before existing site script to retain original English text nodes; site-wide translator is unchanged. */
 (() => {
 'use strict';
