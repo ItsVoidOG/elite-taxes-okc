@@ -2258,3 +2258,20 @@ html[lang="es"] .hero h1{font-size:clamp(54px,7vw,102px);overflow-wrap:break-wor
 @media(min-width:981px) and (max-width:1180px){.desktop-nav{gap:11px;letter-spacing:.08em;font-size:9.5px}}
 .cta-side .intake-quick-link{margin-top:18px}
 .cta-side .intake-quick-link .text-link{font-size:11px}
+
+
+/* Four-link desktop header layout: allocate room for navigation, social icons,
+   and the Call button rather than offsetting elements visually. */
+@media (min-width:1181px){
+  .site-header .header-inner{grid-template-columns:minmax(0,440px) minmax(0,1fr) auto;gap:clamp(16px,1.65vw,30px)}
+  .site-header .desktop-nav{justify-self:stretch;justify-content:center;width:100%;min-width:0;gap:clamp(12px,1.35vw,24px)}
+  .site-header .desktop-nav .social-cluster{transform:none;margin-left:clamp(14px,1.7vw,30px)}
+  .site-header .header-cta{white-space:nowrap}
+}
+@media (min-width:981px) and (max-width:1180px) and (orientation:landscape){
+  .site-header .header-inner{grid-template-columns:clamp(250px,29vw,310px) minmax(0,1fr) auto;gap:clamp(9px,1vw,15px)}
+  .site-header .header-address{display:none}
+  .site-header .desktop-nav{justify-self:stretch;justify-content:center;width:100%;min-width:0;gap:clamp(8px,.8vw,11px)}
+  .site-header .desktop-nav .social-cluster{transform:none;margin-left:6px}
+  .site-header .header-cta{white-space:nowrap;padding:10px 12px}
+}

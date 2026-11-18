@@ -204,3 +204,11 @@
 html:not([lang="ar"]) .page-header .desktop-nav{font-family:"Elite Intake Nav Manrope",Arial,sans-serif!important}
 
 #encryption-readiness[hidden]{display:none!important}
+
+
+/* Intake loads local fonts instead of requesting third-party Google Fonts.
+   Keep the shared header typography visually identical across pages. */
+@font-face{font-family:"Elite Intake DM Sans";src:url("./assets/dm-sans-variable.ttf") format("truetype");font-style:normal;font-weight:100 1000;font-display:swap}
+html:not([lang="ar"]) .page-header .header-cta,
+html:not([lang="ar"]) .page-header .header-address{font-family:"Elite Intake Nav Manrope",Arial,sans-serif!important}
+html:not([lang="ar"]) .page-header .mobile-menu-inner{font-family:"Elite Intake DM Sans",Arial,sans-serif!important}
