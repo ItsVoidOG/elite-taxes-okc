@@ -1,5 +1,5 @@
 /* Elite Taxes OKC - browser-only, PDF 2.0 AES-256 (Revision 6) writer.
- * PRIVATE TEST BUILD. Do not deploy for actual taxpayer records without review.
+ * This custom cryptographic implementation has not had an independent security audit.
  * The PDF pages are drawn locally to canvas; image/content streams are encrypted
  * before constructing the downloadable PDF. No plaintext PDF is saved or downloaded.
  * Uses built-in Web Crypto, no CDN, third-party code, or network requests.
