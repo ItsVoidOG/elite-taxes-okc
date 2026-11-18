@@ -199,3 +199,6 @@
 /* Final privacy and availability guidance */
 .intake-page #dependentLimitMessage:not(:empty) {margin-top:12px;color:#9b262b;font-weight:700;font-size:12px;line-height:1.5}
 .intake-page .clipboard-notice {font-size:12px;line-height:1.65;color:#51657b;background:#f5f7fa;border-left:3px solid #9db6cf;padding:12px 14px;margin:12px 0 18px}
+/* Match the site's Manrope navigation without loading third-party fonts on the intake page. */
+@font-face{font-family:"Elite Intake Nav Manrope";src:url("./assets/manrope-nav-variable.ttf") format("truetype");font-style:normal;font-weight:200 800;font-display:swap}
+html:not([lang="ar"]) .page-header .desktop-nav{font-family:"Elite Intake Nav Manrope",Arial,sans-serif!important}
