@@ -146,7 +146,7 @@
 .intake-page .password-share-panel #copyPdfPassword{width:100%}
 
 /* v9: concise Signal privacy explanation; SMS fallback remains manual and universal. */
-.intake-page .signal-option{grid-column:1 / -1}
+.intake-page .signal-option,.intake-page .sms-option{grid-column:1 / -1}
 .intake-page .signal-benefits{background:#edf3f7;border-left:3px solid #6eabda;padding:12px 14px;margin:0 0 15px;color:#304b63;font-size:12px;line-height:1.6}
 .intake-page .signal-benefits>strong{display:block;color:#0a2342;font-size:12px;margin-bottom:6px}
 .intake-page .signal-benefits ul{padding-left:18px;margin:0}
