@@ -2260,46 +2260,56 @@ html[lang="es"] .hero h1{font-size:clamp(54px,7vw,102px);overflow-wrap:break-wor
 .cta-side .intake-quick-link .text-link{font-size:11px}
 
 
-/* Unified desktop header: navigation begins after the brand, and the Call
-   button stays right-aligned with consistent size around laptop breakpoints. */
-@media (min-width:981px){
-  .site-header .header-cta{
-    padding:12px 18px;
-    font-size:11px;
-    line-height:normal;
-    letter-spacing:.08em;
+/* Approved header: five evenly spaced desktop groups.
+   Logo, address, nav, social icons and Call button are peers.
+   Preserve the existing laptop Call sizing and mobile header behavior. */
+.site-header .header-inner > .social-cluster { display: none; }
+@media (min-width:1181px), (min-width:981px) and (max-width:1180px) and (orientation:landscape) {
+  /* Same header width on every page so the Call button never shifts on navigation. */
+  html body .site-header .shell.header-inner {
+    display:flex;
+    width:calc(100% - 48px);
+    max-width:none;
+    justify-content:space-between;
+    align-items:center;
+    gap:0;
+  }
+  .site-header .header-brand-block { display:contents; }
+  .site-header .header-brand-block > .brand { flex:0 0 auto; }
+  .site-header .header-address { flex:0 0 auto; }
+  .site-header .desktop-nav {
+    display:flex;
+    flex:0 0 auto;
+    align-items:center;
+    justify-content:flex-start;
+    width:auto;
+    min-width:0;
+    margin:0;
+    gap:clamp(10px,1.25vw,22px);
     white-space:nowrap;
   }
-}
-@media (min-width:1181px){
-  .site-header .header-inner{display:flex;align-items:center;gap:clamp(12px,1.4vw,26px)}
-  .site-header .header-brand-block{flex:0 0 auto}
-  .site-header .desktop-nav{
-    flex:1 1 auto;display:flex;align-items:center;
-    justify-self:auto;justify-content:flex-start;
-    gap:clamp(11px,1.2vw,22px);
-    margin-left:clamp(4px,.55vw,10px);
-    min-width:0;width:auto;white-space:nowrap
+  .site-header .header-inner > .social-cluster {
+    display:inline-flex;
+    flex:0 0 auto;
+    gap:8px;
+    margin:0;
+    transform:none;
   }
-  .site-header .desktop-nav .social-cluster{transform:none;margin-left:clamp(6px,1.1vw,18px)}
-  .site-header .header-cta{flex:0 0 auto;margin-left:auto}
+  .site-header .header-cta {flex:0 0 auto;margin:0;white-space:nowrap;}
 }
-@media (min-width:981px) and (max-width:1180px) and (orientation:landscape){
-  .site-header .header-inner{display:flex;align-items:center;gap:clamp(9px,1.1vw,16px)}
-  .site-header .header-brand-block{flex:0 0 auto}
-  .site-header .header-address{display:none}
-  .site-header .desktop-nav{
-    flex:1 1 auto;display:flex;align-items:center;
-    justify-self:auto;justify-content:flex-start;
-    gap:clamp(8px,1vw,13px);margin-left:0;
-    min-width:0;width:auto;white-space:nowrap
+@media (min-width:981px) and (max-width:1180px) and (orientation:landscape) {
+  .site-header .header-address {display:none;}
+  .site-header .header-cta {font-size:9px;padding:11px 13px;line-height:normal;}
+  .site-header .desktop-nav {font-size:10px;gap:clamp(8px,1.1vw,12px);}
+}
+/* Local Manrope font keeps typography identical between the intake and main pages. */
+@font-face{font-family:"Elite Header Manrope";src:url("intake/assets/manrope-nav-variable.ttf") format("truetype");font-style:normal;font-weight:200 800;font-display:swap}
+html:not([lang="ar"]) .site-header .desktop-nav,
+html:not([lang="ar"]) .site-header .header-cta,
+html:not([lang="ar"]) .site-header .header-address{font-family:"Elite Header Manrope",Arial,sans-serif!important}
+@media (min-width:981px){
+  .site-header .header-cta{
+    font-size:clamp(9px,calc(1.333333vw - 6.73333px),11px);
+    padding:clamp(11px,calc(.666667vw + 3.13333px),12px) clamp(13px,calc(3.333333vw - 26.33333px),18px);
   }
-  .site-header .desktop-nav .social-cluster{transform:none;margin-left:6px}
-  .site-header .header-cta{flex:0 0 auto;margin-left:auto}
-}
-@media(min-width:1181px) and (max-width:1249px){
-  .site-header .header-inner{gap:12px}
-  .site-header .desktop-nav{gap:12px;margin-left:0;font-size:11px}
-  .site-header .desktop-nav .social-cluster{margin-left:6px}
-  .site-header .header-brand-block .brand img{width:225px}
 }
