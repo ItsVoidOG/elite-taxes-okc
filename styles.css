@@ -2260,53 +2260,80 @@ html[lang="es"] .hero h1{font-size:clamp(54px,7vw,102px);overflow-wrap:break-wor
 .cta-side .intake-quick-link .text-link{font-size:11px}
 
 
-/* Approved header: five evenly spaced desktop groups.
-   Logo, address, nav, social icons and Call button are peers.
-   Preserve the existing laptop Call sizing and mobile header behavior. */
-.site-header .header-inner > .social-cluster { display: none; }
-@media (min-width:1181px), (min-width:981px) and (max-width:1180px) and (orientation:landscape) {
-  /* Same header width on every page so the Call button never shifts on navigation. */
-  html body .site-header .shell.header-inner {
+/* REVIEW PREVIEW — Restore content-width header and group the logo with its address.
+   The desktop header contains four peers: [logo + address], [four nav links],
+   [social icons], [Call]. Shared across every page to prevent page-change jumps. */
+.site-header .header-inner > .social-cluster{display:none}
+@media (min-width:1181px), (min-width:981px) and (max-width:1180px) and (orientation:landscape){
+  html body .site-header .shell.header-inner{
     display:flex;
-    width:calc(100% - 48px);
-    max-width:none;
+    width:min(calc(100% - 64px),var(--max));
+    max-width:var(--max);
+    margin-inline:auto;
     justify-content:space-between;
     align-items:center;
     gap:0;
+    padding:8px 0;
   }
-  .site-header .header-brand-block { display:contents; }
-  .site-header .header-brand-block > .brand { flex:0 0 auto; }
-  .site-header .header-address { flex:0 0 auto; }
-  .site-header .desktop-nav {
+  .site-header{height:110px}
+  .site-header .header-brand-block{
     display:flex;
     flex:0 0 auto;
     align-items:center;
     justify-content:flex-start;
+    gap:18px;
+    min-width:0;
+    height:auto;
+  }
+  .site-header .header-brand-block > .brand{
+    display:flex;
+    flex:0 0 auto;
+    align-items:center;
+    height:auto;
+    transform:none;
+  }
+  .site-header .header-address{
+    display:block;
+    flex:0 0 auto;
+    margin:0;
+  }
+  .site-header .desktop-nav{
+    display:flex;
+    flex:0 0 auto;
+    align-items:center;
+    justify-content:flex-start;
+    justify-self:auto;
+    gap:clamp(10px,1.25vw,22px);
     width:auto;
     min-width:0;
     margin:0;
-    gap:clamp(10px,1.25vw,22px);
     white-space:nowrap;
   }
-  .site-header .header-inner > .social-cluster {
+  .site-header .header-inner > .social-cluster{
     display:inline-flex;
     flex:0 0 auto;
-    gap:8px;
+    align-items:center;
     margin:0;
     transform:none;
+    gap:8px;
   }
-  .site-header .header-cta {flex:0 0 auto;margin:0;white-space:nowrap;}
+  .site-header .header-cta{
+    flex:0 0 auto;
+    margin:0;
+    white-space:nowrap;
+  }
 }
-@media (min-width:981px) and (max-width:1180px) and (orientation:landscape) {
-  .site-header .header-address {display:none;}
-  .site-header .header-cta {font-size:9px;padding:11px 13px;line-height:normal;}
-  .site-header .desktop-nav {font-size:10px;gap:clamp(8px,1.1vw,12px);}
+/* At laptop widths, keep the established hidden address/compact menu. */
+@media (min-width:981px) and (max-width:1180px) and (orientation:landscape){
+  .site-header .header-address{display:none}
+  .site-header .desktop-nav{font-size:10px;gap:clamp(8px,1.1vw,12px)}
 }
-/* Local Manrope font keeps typography identical between the intake and main pages. */
+/* Use the same self-hosted Manrope on every header, including Call. */
 @font-face{font-family:"Elite Header Manrope";src:url("intake/assets/manrope-nav-variable.ttf") format("truetype");font-style:normal;font-weight:200 800;font-display:swap}
 html:not([lang="ar"]) .site-header .desktop-nav,
 html:not([lang="ar"]) .site-header .header-cta,
 html:not([lang="ar"]) .site-header .header-address{font-family:"Elite Header Manrope",Arial,sans-serif!important}
+/* Smooth CTA sizing across the 1180–1181px boundary. */
 @media (min-width:981px){
   .site-header .header-cta{
     font-size:clamp(9px,calc(1.333333vw - 6.73333px),11px);
