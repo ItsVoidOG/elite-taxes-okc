@@ -2260,18 +2260,46 @@ html[lang="es"] .hero h1{font-size:clamp(54px,7vw,102px);overflow-wrap:break-wor
 .cta-side .intake-quick-link .text-link{font-size:11px}
 
 
-/* Four-link desktop header layout: allocate room for navigation, social icons,
-   and the Call button rather than offsetting elements visually. */
+/* Unified desktop header: navigation begins after the brand, and the Call
+   button stays right-aligned with consistent size around laptop breakpoints. */
+@media (min-width:981px){
+  .site-header .header-cta{
+    padding:12px 18px;
+    font-size:11px;
+    line-height:normal;
+    letter-spacing:.08em;
+    white-space:nowrap;
+  }
+}
 @media (min-width:1181px){
-  .site-header .header-inner{grid-template-columns:minmax(0,440px) minmax(0,1fr) auto;gap:clamp(16px,1.65vw,30px)}
-  .site-header .desktop-nav{justify-self:stretch;justify-content:center;width:100%;min-width:0;gap:clamp(12px,1.35vw,24px)}
-  .site-header .desktop-nav .social-cluster{transform:none;margin-left:clamp(14px,1.7vw,30px)}
-  .site-header .header-cta{white-space:nowrap}
+  .site-header .header-inner{display:flex;align-items:center;gap:clamp(12px,1.4vw,26px)}
+  .site-header .header-brand-block{flex:0 0 auto}
+  .site-header .desktop-nav{
+    flex:1 1 auto;display:flex;align-items:center;
+    justify-self:auto;justify-content:flex-start;
+    gap:clamp(11px,1.2vw,22px);
+    margin-left:clamp(4px,.55vw,10px);
+    min-width:0;width:auto;white-space:nowrap
+  }
+  .site-header .desktop-nav .social-cluster{transform:none;margin-left:clamp(6px,1.1vw,18px)}
+  .site-header .header-cta{flex:0 0 auto;margin-left:auto}
 }
 @media (min-width:981px) and (max-width:1180px) and (orientation:landscape){
-  .site-header .header-inner{grid-template-columns:clamp(250px,29vw,310px) minmax(0,1fr) auto;gap:clamp(9px,1vw,15px)}
+  .site-header .header-inner{display:flex;align-items:center;gap:clamp(9px,1.1vw,16px)}
+  .site-header .header-brand-block{flex:0 0 auto}
   .site-header .header-address{display:none}
-  .site-header .desktop-nav{justify-self:stretch;justify-content:center;width:100%;min-width:0;gap:clamp(8px,.8vw,11px)}
+  .site-header .desktop-nav{
+    flex:1 1 auto;display:flex;align-items:center;
+    justify-self:auto;justify-content:flex-start;
+    gap:clamp(8px,1vw,13px);margin-left:0;
+    min-width:0;width:auto;white-space:nowrap
+  }
   .site-header .desktop-nav .social-cluster{transform:none;margin-left:6px}
-  .site-header .header-cta{white-space:nowrap;padding:10px 12px}
+  .site-header .header-cta{flex:0 0 auto;margin-left:auto}
+}
+@media(min-width:1181px) and (max-width:1249px){
+  .site-header .header-inner{gap:12px}
+  .site-header .desktop-nav{gap:12px;margin-left:0;font-size:11px}
+  .site-header .desktop-nav .social-cluster{margin-left:6px}
+  .site-header .header-brand-block .brand img{width:225px}
 }
