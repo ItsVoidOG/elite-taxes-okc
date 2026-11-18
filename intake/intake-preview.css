@@ -1,6 +1,6 @@
 
-/* ELITE TAXES OKC • ISOLATED INTAKE DESIGN PREVIEW
-   Live site CSS and all original pages are preserved. */
+/* ELITE TAXES OKC • INTAKE PAGE STYLES
+   Scoped to the intake page, preserving the existing site layouts. */
 .preview-banner {background:#d83b3f;color:#fff;min-height:34px;padding:8px 16px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;text-align:center;font:700 10px/1.3 "Manrope", Arial, sans-serif,sans-serif;letter-spacing:.035em;position:relative;z-index:32}
 .preview-banner .preview-mark{background:#fff;color:#c62934;border-radius:3px;padding:4px 7px;font-weight:800;letter-spacing:.11em}
 .preview-dash{opacity:.5}
@@ -202,3 +202,5 @@
 /* Match the site's Manrope navigation without loading third-party fonts on the intake page. */
 @font-face{font-family:"Elite Intake Nav Manrope";src:url("./assets/manrope-nav-variable.ttf") format("truetype");font-style:normal;font-weight:200 800;font-display:swap}
 html:not([lang="ar"]) .page-header .desktop-nav{font-family:"Elite Intake Nav Manrope",Arial,sans-serif!important}
+
+#encryption-readiness[hidden]{display:none!important}
