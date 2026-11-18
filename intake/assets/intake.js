@@ -360,9 +360,9 @@ $("copyPdfPassword").addEventListener("click", async function(){
 $("copyOfficeNumber").addEventListener("click", async function(){
   try{
     await navigator.clipboard.writeText("405-778-5388");
-    $("officeCopyStatus").textContent = tr("Phone number copied.");
+    $("officeCopyStatus").textContent = tr("Texting number copied.");
   }catch(err){
-    $("officeCopyStatus").textContent = tr("Copy unavailable. Dial 405-778-5388 manually.");
+    $("officeCopyStatus").textContent = tr("Copy unavailable. Enter 405-778-5388 manually.");
   }
 });
 
