@@ -11,6 +11,16 @@ document.querySelectorAll('.cap-list, .process-steps, .trust-cards, .service-gri
 (() => {
   const dictionary = Object.fromEntries([
   [
+    "Tax Form",
+    "Formulario fiscal",
+    "النموذج الضريبي"
+  ],
+  [
+    "Complete Tax Form ↗",
+    "Completar formulario fiscal ↗",
+    "أكمل النموذج الضريبي ↗"
+  ],
+  [
     "About",
     "Nosotros",
     "من نحن"
