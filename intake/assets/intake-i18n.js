@@ -4,7 +4,7 @@
 'use strict';
 const original = new WeakMap();
 const translations = {
-" Send its password separately through Signal (recommended) or by text message to 405-778-5388. Never include the password or personal information in the email message.": [" Comparta su contraseña por separado a través de Signal (recomendado) o por mensaje de texto al 405-778-5388. Nunca incluya la contraseña ni datos personales en el correo electrónico."," شارك كلمة المرور بشكل منفصل عبر سيغنال (موصى به) أو برسالة نصية إلى 405-778-5388. لا تُدرج كلمة المرور أو معلومات شخصية في البريد الإلكتروني."],
+". Send its password separately through Signal (recommended) or by text message to 405-778-5388. Never include the password or personal information in the email message.": [" Comparta su contraseña por separado a través de Signal (recomendado) o por mensaje de texto al 405-778-5388. Nunca incluya la contraseña ni datos personales en el correo electrónico."," شارك كلمة المرور بشكل منفصل عبر سيغنال (موصى به) أو برسالة نصية إلى 405-778-5388. لا تُدرج كلمة المرور أو معلومات شخصية في البريد الإلكتروني."],
 "End-to-end privacy:": ["Privacidad de extremo a extremo:","خصوصية بتشفير تام بين الطرفين:"],
 "Your message is encrypted so only you and the intended recipient can read it—not Signal or your mobile carrier.": ["Su mensaje está cifrado para que solo usted y el destinatario previsto puedan leerlo, no Signal ni su compañía telefónica.","تُشفَّر رسالتك بحيث لا يستطيع قراءتها إلا أنت والمستلم المقصود، وليس سيغنال أو شركة الاتصالات."],
 "Accurate password sharing:": ["Contraseña sin errores:","مشاركة كلمة المرور بدقة:"],
