@@ -1,0 +1,201 @@
+
+/* ELITE TAXES OKC • ISOLATED INTAKE DESIGN PREVIEW
+   Live site CSS and all original pages are preserved. */
+.preview-banner {background:#d83b3f;color:#fff;min-height:34px;padding:8px 16px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;text-align:center;font:700 10px/1.3 "Manrope", Arial, sans-serif,sans-serif;letter-spacing:.035em;position:relative;z-index:32}
+.preview-banner .preview-mark{background:#fff;color:#c62934;border-radius:3px;padding:4px 7px;font-weight:800;letter-spacing:.11em}
+.preview-dash{opacity:.5}
+.page-header .site-header{position:relative}
+.intake-hero{background:#0b2342;min-height:310px;position:relative;overflow:hidden;color:#fff;border-bottom:5px solid var(--red)}
+.intake-hero-ribbon{position:absolute;width:min(660px,60vw);right:-9%;top:-28%;opacity:.17;transform:rotate(-5deg);pointer-events:none}
+.intake-hero-inner{padding:59px 0 66px;display:grid;grid-template-columns:1.5fr .5fr;align-items:end;gap:80px;position:relative;z-index:1}
+.intake-hero h1{font:600 clamp(40px,5.5vw,73px)/.98 "Manrope", Arial, sans-serif,sans-serif;letter-spacing:-.06em;margin:15px 0 22px}
+.intake-hero h1 span{color:#7fb0db}
+.intake-hero-desc{font-size:16px;line-height:1.7;color:#d0dce6;max-width:600px;margin:0}
+.intake-hero-aside{justify-self:end;min-width:210px;padding-bottom:7px}
+.intake-step{font:800 11px "Manrope", Arial, sans-serif;letter-spacing:.18em;color:#8bbce5}
+.intake-hero-aside-rule{width:48px;height:2px;background:#e13c44;margin:15px 0 17px}
+.intake-hero-aside p{font:600 21px/1.45 "Manrope", Arial, sans-serif;letter-spacing:-.035em;margin:0;color:#dfe8f0}
+.intake-page{background:#f4f0e8;padding:70px 0 100px}
+.intake-layout{display:grid;grid-template-columns:minmax(220px, .35fr) minmax(0,.9fr);gap:55px;max-width:1180px;align-items:start}
+.intake-sidebar{min-width:0}
+.intake-sidebar-inner{position:sticky;top:26px;padding-top:18px}
+.intake-kicker{font:800 11px "Manrope", Arial, sans-serif,sans-serif;color:var(--red);letter-spacing:.16em;margin:0 0 20px}
+.intake-sidebar h2{font:600 clamp(29px,3vw,43px)/1.03 "Manrope", Arial, sans-serif;letter-spacing:-.06em;margin:0 0 18px}
+.intake-sidebar p{font-size:14px;line-height:1.8;color:#586b7e}
+.intake-step-list{margin-top:34px;border-top:1px solid rgba(10,35,66,.14)}
+.intake-step-list div{display:flex;align-items:center;gap:19px;padding:18px 0;border-bottom:1px solid rgba(10,35,66,.14);font-size:13px;font-weight:700}
+.intake-step-list strong{font:800 11px "Manrope", Arial, sans-serif;letter-spacing:.12em;color:#d83b3f}
+.intake-safety{margin-top:38px;padding:22px;background:#e8e4dc;border-left:3px solid #7baad3}
+.intake-safety strong{font:800 12px "Manrope", Arial, sans-serif;color:#0a2342}
+.intake-safety p{margin:9px 0 0;font-size:12px;line-height:1.7}
+.intake-form-card{min-width:0;background:#fbfaf6;border:1px solid rgba(10,35,66,.14);box-shadow:0 12px 40px rgba(5,22,42,.045)}
+.intake-form-content{padding:43px 42px 49px}
+.intake-form-heading{font:600 clamp(27px,3.1vw,38px)/1.15 "Manrope", Arial, sans-serif;letter-spacing:-.058em;margin:0 0 9px;color:#0a2342}
+.intake-form-content>.lead{font-size:14px;color:#617081;max-width:50ch;line-height:1.7;margin:0 0 25px}
+.intake-toolbar{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:18px 0;border-top:1px solid #dee3e5;border-bottom:1px solid #dee3e5;margin-bottom:20px}
+.intake-year{display:flex;align-items:center;gap:10px}
+.intake-year label{font:800 10px "Manrope", Arial, sans-serif;letter-spacing:.12em;color:#627083}
+.intake-year select{width:116px;border:1px solid #ced7dd;border-radius:4px;background:#fff;color:#0a2342;padding:8px 12px;font-size:14px;font-weight:700;min-height:43px}
+.intake-toolbar-help{display:flex;align-items:center;gap:7px;color:#6e7c89;font-size:11px;font-weight:600}
+.intake-dot{width:7px;height:7px;background:#d83b3f;border-radius:50%;display:inline-block}
+.intake-checklist-button{display:inline-flex;justify-content:space-between;align-items:center;width:100%;background:#eaf0f5;border:1px solid #cbdbea;color:#0a2342;padding:16px 17px;min-height:54px;font:800 12px "Manrope", Arial, sans-serif;letter-spacing:.01em;text-align:left;cursor:pointer;transition:background .2s}
+.intake-checklist-button:hover{background:#e1eaf2}
+.intake-page form{display:grid;gap:18px;margin-top:23px}
+.intake-page fieldset{min-width:0;margin:0;padding:22px 23px 24px;background:#fff;border:1px solid #dce2e6;border-radius:5px}
+.intake-page fieldset legend{font:800 15px/1.3 "Manrope", Arial, sans-serif;letter-spacing:-.02em;color:#0a2342;padding:0 10px 0 0;margin:0}
+.intake-page .grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px 14px}
+.intake-page .c6{grid-column:span 6}.intake-page .c4{grid-column:span 4}.intake-page .c3{grid-column:span 3}.intake-page .c2{grid-column:span 2}
+.intake-page label{display:block;color:#263a53;font:700 12px/1.5 "DM Sans",sans-serif;margin:0 0 7px}
+.intake-page .opt{font-weight:400;color:#7e8994}
+.intake-page input:not([type=checkbox]):not([type=radio]),.intake-page select{width:100%;font:500 14px "DM Sans",sans-serif;min-height:45px;line-height:1.4;color:#152f4d;background:#fff;border:1px solid #cbd4dd;border-radius:4px;padding:10px 11px;box-shadow:none;max-width:100%}
+.intake-page input::placeholder{color:#9aa6b0}
+.intake-page input:focus,.intake-page select:focus,.intake-page button:focus-visible{outline:2px solid #82b1d8;outline-offset:2px}
+.intake-page input[aria-invalid=true]{border-color:#c22c38}
+.intake-page .err{color:#c62a35;font:500 11px/1.4 "DM Sans";margin:5px 0 0}
+.intake-page .hint{color:#617081;font-size:12px;line-height:1.65;margin:0 0 10px}
+/* Align date-of-birth and SSN controls despite different label lengths. */
+.intake-page #intake > fieldset:first-of-type .grid > .c3{display:flex;flex-direction:column}
+.intake-page #intake > fieldset:first-of-type .grid > .c3 > label{flex-grow:1}
+.intake-page .ssn{display:flex;gap:8px;align-items:stretch}
+.intake-page .ssn input{min-width:0;flex:1;letter-spacing:.06em}
+.intake-page .btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 18px;background:#d83b3f;border:1px solid #d83b3f;border-radius:3px;color:#fff;font:800 11px "Manrope", Arial, sans-serif;letter-spacing:.03em;cursor:pointer;transition:background .2s}
+.intake-page .btn:hover{background:#b82e35}
+.intake-page .btn.ghost{background:#fff;color:#0a2342;border-color:#bfcbd6}
+.intake-page .btn.ghost:hover{background:#eef3f6}
+.intake-page .btn.small{font-size:10px;padding:9px 12px;min-height:45px}
+.intake-page .btn.danger{border-color:#d83b3f;color:#d83b3f;background:#fff}
+.intake-page .choice{display:flex;gap:15px 18px;flex-wrap:wrap}
+.intake-page .choice label{display:inline-flex;align-items:center;gap:9px;margin:0;font-weight:600;font-size:12px;cursor:pointer}
+.intake-page input[type=checkbox],.intake-page input[type=radio]{margin:0;min-height:0;width:16px;height:16px;accent-color:#d83b3f}
+.intake-page .hidden{display:none!important}
+.intake-page .count{background:#edf3f8;color:#185078;padding:2px 9px;border-radius:4px;margin-left:6px;font:700 12px "Manrope", Arial, sans-serif}
+.intake-page #deps{display:grid;gap:16px;margin:18px 0}
+.intake-page .dep{border:1px solid #d5dfe6;border-left:3px solid #78add8;padding:16px;border-radius:4px;background:#f9fbfc}
+.intake-page .dep-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:14px}
+.intake-page .dep-head strong{font:800 13px "Manrope", Arial, sans-serif;color:#0a2342}
+.intake-page .secure{margin:3px 0 0;padding:15px 18px;border-left:3px solid #d83b3f;background:#fff1ee;color:#734a40;font-size:12px;line-height:1.7}
+.intake-page .actions{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+.intake-page #status{margin:0;font-size:12px;font-weight:600;flex:1;min-width:180px}
+.intake-page #status.ok{color:#1f7346}.intake-page #status.bad{color:#bc3038}
+.intake-page .documents-dialog{width:min(660px,calc(100% - 32px));max-height:85vh;overflow:auto;border:1px solid #d7e0e7;border-radius:7px;padding:29px 31px;background:#fff;color:#0a2342;box-shadow:0 15px 50px rgba(0,0,0,.16)}
+.intake-page .documents-dialog::backdrop{background:rgba(5,21,41,.68)}
+.intake-page .documents-dialog h2{font:700 25px "Manrope", Arial, sans-serif;letter-spacing:-.04em;margin:0 0 18px}
+.intake-page .documents-dialog h3{font:800 13px "Manrope", Arial, sans-serif;margin:22px 0 15px}
+.intake-page .checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 18px}
+.intake-page .checklist label{display:flex;align-items:flex-start;gap:9px;color:#2b425c;font-weight:500}
+.intake-page .dialog-actions{display:flex;justify-content:flex-end;margin-top:28px}
+@media(max-width:1100px){.intake-layout{gap:30px;grid-template-columns:minmax(185px,.31fr) minmax(0,.75fr)}.intake-form-content{padding:32px 28px}.intake-sidebar h2{font-size:31px}}
+@media(max-width:840px){.intake-layout{grid-template-columns:1fr;gap:28px;max-width:760px}.intake-sidebar-inner{position:static;padding:0}.intake-sidebar h2 br{display:none}.intake-step-list,.intake-safety{display:none}.intake-sidebar h2{font-size:31px;margin-bottom:6px}.intake-sidebar p{margin:0}.intake-hero-inner{grid-template-columns:1fr;gap:0}.intake-hero-aside{display:none}.intake-page{padding-top:42px}.intake-hero h1{font-size:56px}}
+@media(max-width:620px){.intake-hero-inner{padding:45px 0 48px}.intake-hero h1{font-size:clamp(36px,10vw,48px)}.intake-hero-desc{font-size:14px}.intake-page{padding:35px 0 65px}.intake-layout{width:min(calc(100% - 30px),var(--max))}.intake-form-content{padding:24px 17px}.intake-form-heading{font-size:27px}.intake-page fieldset{padding:19px 15px 20px}.intake-page .c4,.intake-page .c3,.intake-page .c2{grid-column:span 6}.intake-page .choice{flex-direction:column;align-items:flex-start}.intake-page .checklist{grid-template-columns:1fr}.intake-page .documents-dialog{padding:23px 20px}.intake-toolbar{align-items:flex-start}.intake-toolbar-help{line-height:1.5}.preview-banner{font-size:9px;gap:7px}.preview-dash{display:none}}
+@media print{.preview-banner,.page-header,.intake-hero,.intake-sidebar,.site-footer,.intake-checklist-button{display:none!important}.intake-page{padding:0;background:#fff}.intake-layout{display:block}.intake-form-card{border:0;box-shadow:none}.intake-form-content{padding:0}.intake-page fieldset{break-inside:avoid}body{background:white}}
+
+/* Scoped private PDF workflow additions: retains global site's existing design */
+.intake-page .password-dialog{width:min(610px,calc(100% - 28px));max-height:min(90vh,860px);overflow:auto;padding:32px;background:#fbfaf6;border:1px solid #ccd8e0;border-radius:7px;color:#0a2342;box-shadow:0 24px 75px rgba(5,21,41,.3)}
+.intake-page .password-dialog::backdrop{background:rgba(6,21,40,.76)}
+.intake-page .password-dialog h2{font:700 clamp(23px,3vw,31px)/1.18 "Manrope",Arial,sans-serif;letter-spacing:-.045em;margin:0 0 13px}
+.intake-page .password-dialog .notice{font-size:13px;line-height:1.65;color:#607084;margin:0 0 22px}
+.intake-page .password-dialog .pw-grid{display:grid;gap:16px}
+.intake-page .password-dialog .pw-grid>div{min-width:0}
+.intake-page .password-dialog .pw-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.intake-page .password-dialog .warning{background:#fff0e9;border-left:3px solid #d83b3f;color:#643e39;padding:13px 15px;font-size:12px;line-height:1.7;margin:0}
+.intake-page #passwordError{font-size:12px;color:#ac2c34;margin:0;min-height:20px}
+.intake-page #submitBtn:disabled,.intake-page .password-dialog button:disabled{opacity:.55;cursor:not-allowed}
+.intake-page .intake-readiness{background:#fff2e5;border:1px solid #efc1aa;border-left:4px solid #d83b3f;color:#7b4538;padding:15px 18px;font-size:12px;line-height:1.6;margin:22px 0 0}
+.intake-page .secure{background:#eef3f6;border-left-color:#78add8;color:#28485d}
+.intake-page .test-banner{margin:0}
+/* Current live site fonts are fetched from Google. Keep the intake page offline-only, with safe local fallbacks. */
+.intake-hero,.intake-page,.page-header,.site-footer{font-family:Arial,Helvetica,sans-serif}
+.intake-hero h1,.intake-page h2,.intake-page legend,.intake-sidebar h2,.intake-page .btn,.desktop-nav,.header-cta,.footer-nav{font-family:"Manrope",Arial,Helvetica,sans-serif!important}
+.intake-page .intake-kicker{letter-spacing:.16em!important}
+.intake-form-content[dir=rtl],.intake-sidebar-inner[dir=rtl],.intake-hero-inner>div:first-child[dir=rtl]{text-align:right}
+.intake-form-content[dir=rtl] label,.intake-form-content[dir=rtl] legend{text-align:right}
+.intake-hero-inner>div:first-child[dir=rtl] h1{line-height:1.14;letter-spacing:-.035em}
+.intake-form-content[dir=rtl] .intake-year{direction:rtl}
+.intake-form-content[dir=rtl] input,.intake-form-content[dir=rtl] select{unicode-bidi:plaintext}
+@media(max-width:620px){.intake-page .password-dialog{padding:22px 18px}.intake-page .password-dialog .pw-actions{flex-direction:column}.intake-page .password-dialog .pw-actions button{width:100%}}
+@media print{.intake-page .intake-readiness{display:none}}
+
+/* Password handoff UI isolated from live site. */
+.intake-page .password-dialog [hidden]{display:none !important}
+.intake-page .password-share-panel{display:grid;gap:11px;background:#edf3f7;padding:17px;border:1px solid #cedce7;margin:18px 0 22px;border-radius:5px}
+.intake-page .password-share-panel label{font-size:11px;font-weight:800;letter-spacing:.11em;color:#566a80;margin:0}
+.intake-page #generatedPdfPassword{display:block;background:#fff;border:1px solid #c9d3dd;border-radius:4px;padding:15px 12px;color:#0a2342;font:700 clamp(15px,2.8vw,22px)/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;text-align:center;word-break:break-all;user-select:all;direction:ltr}
+.intake-page #copyStatus{font-size:12px;color:#315b76;line-height:1.5;margin:0}
+.intake-page .share-heading{font:800 14px "Manrope",Arial,sans-serif;color:#0a2342;margin:19px 0 9px}
+.intake-page .share-methods{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.intake-page .share-option{min-width:0;border:1px solid #d4e0e8;border-radius:5px;background:#fff;padding:15px}
+.intake-page .share-option-label{margin:0 0 10px;color:#0a2342;font:800 11px/1.5 "Manrope",Arial,sans-serif;letter-spacing:.04em}
+.intake-page .share-option-desc{margin:0 0 14px;color:#4e6679;font-size:12px;line-height:1.65}
+.intake-page .share-contact{display:flex;flex-wrap:wrap;gap:9px;align-items:center}
+.intake-page .share-number{font:800 20px/1.4 "Manrope",Arial,sans-serif;white-space:nowrap;color:#0a2342}
+.intake-page .share-contact .btn{min-width:0;font-size:11px;padding:9px 12px;text-align:center}
+.intake-page .share-option-tip{font-size:11px;line-height:1.55;color:#607084;margin:0}
+.intake-page #officeCopyStatus:empty{display:none}
+.intake-page .share-help{font-size:12px;line-height:1.6;color:#4e6679;margin:14px 0}
+.intake-page #shareStep .warning{margin:16px 0 18px}
+.intake-page #shareStep .pw-actions{justify-content:flex-end}
+@media(max-width:620px){.intake-page .share-methods{grid-template-columns:1fr}.intake-page .password-share-panel{padding:12px}.intake-page #generatedPdfPassword{font-size:15px;letter-spacing:0}}
+
+/* v7: universal Signal-first sharing instructions; phone backup. */
+.intake-page .share-option{overflow-wrap:anywhere}
+.intake-page .signal-steps{padding-left:19px;margin:0 0 13px;color:#334b61;font-size:12px;line-height:1.65}
+.intake-page .signal-steps li{padding-left:2px;margin-bottom:7px}
+.intake-page .signal-steps strong{font-weight:800;color:#173450}
+.intake-page .signal-download{margin-top:8px}
+.intake-page .signal-download a{color:#15598e;text-decoration:underline;text-underline-offset:2px}
+.intake-page .password-share-panel #copyPdfPassword{width:100%}
+
+/* v9: concise Signal privacy explanation; SMS fallback remains manual and universal. */
+.intake-page .signal-option{grid-column:1 / -1}
+.intake-page .signal-benefits{background:#edf3f7;border-left:3px solid #6eabda;padding:12px 14px;margin:0 0 15px;color:#304b63;font-size:12px;line-height:1.6}
+.intake-page .signal-benefits>strong{display:block;color:#0a2342;font-size:12px;margin-bottom:6px}
+.intake-page .signal-benefits ul{padding-left:18px;margin:0}
+.intake-page .signal-benefits li{margin:4px 0}
+.intake-page .signal-benefits li strong{color:#0a2342}
+.intake-page [dir=rtl] .signal-benefits{border-left:0;border-right:3px solid #6eabda}
+.intake-page [dir=rtl] .signal-benefits ul,.intake-page [dir=rtl] .signal-steps{padding-left:0;padding-right:18px}
+
+/* v10 · final pre-launch copy and PDF handoff polish (intake-only) */
+.intake-page .checklist-intro{margin:0 0 16px;font-size:13px;line-height:1.7;color:#526b7f}
+.intake-page .email-share-panel{background:#fff;border:1px solid #d4e0e8;border-radius:5px;padding:18px;margin:0 0 23px}
+.intake-page .email-share-header{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.intake-page .email-share-header strong{font:800 14px/1.5 "Manrope",Arial,sans-serif;color:#0a2342}
+.intake-page .email-share-header span{font-size:11px;font-weight:600;color:#668096}
+.intake-page .email-share-address{color:#0a2342;overflow-wrap:anywhere;font:700 clamp(14px,2vw,16px)/1.5 "Manrope",Arial,sans-serif;padding:13px 15px;background:#edf3f7;border:1px solid #d4e0e8;border-radius:4px;direction:ltr;text-align:left}
+.intake-page .email-share-actions{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 8px}
+.intake-page .email-share-actions .btn{min-height:40px;padding:9px 12px}
+.intake-page #emailCopyStatus{font-size:12px;line-height:1.5;color:#315b76;margin:0 0 7px}
+.intake-page #emailCopyStatus:empty{display:none}
+.intake-page .email-share-panel>.share-option-tip{line-height:1.65;margin-top:9px}
+.intake-page .password-dialog .notice{font-size:13px;line-height:1.75}
+.intake-page .share-option-label{letter-spacing:.035em}
+.intake-page .signal-steps{line-height:1.7}
+.intake-page .signal-benefits{margin-bottom:15px}
+.intake-page .share-help{padding:12px 15px;background:#edf3f7;border-radius:4px}
+.intake-page .pw-actions .btn{min-width:140px}
+.intake-page .password-dialog .warning{margin-bottom:14px}
+.intake-page .intake-readiness{margin-top:15px}
+@media(max-width:620px){
+  .intake-page .email-share-panel{padding:14px}
+  .intake-page .email-share-actions{display:grid;grid-template-columns:1fr}
+  .intake-page .email-share-actions .btn{width:100%}
+  .intake-page .email-share-header span{font-size:10px}
+}
+
+/* A compact, optional explanation instead of a long always-open security lecture. */
+.intake-page .signal-benefits{padding:12px 14px}
+.intake-page .signal-benefits summary{font-size:12px;font-weight:800;color:#0a2342;cursor:pointer;line-height:1.6}
+.intake-page .signal-benefits ul{margin:11px 0 0}
+.intake-page .share-heading{margin-top:24px;margin-bottom:13px}
+.intake-page .password-share-panel{margin:0 0 15px}
+.intake-page .email-share-panel{margin-bottom:0}
+/* Preserve readable five-letter password groups on narrow screens. */
+.intake-page #generatedPdfPassword{word-break:normal;overflow-wrap:anywhere}
+@media(max-width:620px){
+  .intake-page .email-share-address{font-size:13px;letter-spacing:-.025em}
+  .intake-page #generatedPdfPassword{font-size:clamp(13px,3.6vw,15px);letter-spacing:-.015em}
+}
+
+/* Final privacy and availability guidance */
+.intake-page #dependentLimitMessage:not(:empty) {margin-top:12px;color:#9b262b;font-weight:700;font-size:12px;line-height:1.5}
+.intake-page .clipboard-notice {font-size:12px;line-height:1.65;color:#51657b;background:#f5f7fa;border-left:3px solid #9db6cf;padding:12px 14px;margin:12px 0 18px}
