@@ -2252,3 +2252,9 @@ html[lang="es"] .hero h1{font-size:clamp(54px,7vw,102px);overflow-wrap:break-wor
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+/* Tax Form menu item: fit four links alongside existing header controls. */
+@media(min-width:981px){.desktop-nav{gap:clamp(12px,1.65vw,24px);min-width:0;white-space:nowrap}}
+@media(min-width:981px) and (max-width:1180px){.desktop-nav{gap:11px;letter-spacing:.08em;font-size:9.5px}}
+.cta-side .intake-quick-link{margin-top:18px}
+.cta-side .intake-quick-link .text-link{font-size:11px}
